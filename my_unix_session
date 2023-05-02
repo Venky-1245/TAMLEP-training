@@ -1,0 +1,1113 @@
+Script started on 2023-04-29 11:09:57+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="77" LINES="30"]
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+[?2004h]0;venky1245@TIGER01686: ~/test1[01;32mvenky1245@TIGER01686[00m:[01;34m~/test1[00m$ w[Kpwd
+[?2004l/home/venky1245/test1
+[?2004h]0;venky1245@TIGER01686: ~/test1[01;32mvenky1245@TIGER01686[00m:[01;34m~/test1[00m$ ls
+[?2004l[0m[01;34mfolder1[0m  [01;34mfolder2[0m
+[?2004h]0;venky1245@TIGER01686: ~/test1[01;32mvenky1245@TIGER01686[00m:[01;34m~/test1[00m$ ls _[K_[K-F
+[?2004l[0m[01;34mfolder1[0m/  [01;34mfolder2[0m/
+[?2004h]0;venky1245@TIGER01686: ~/test1[01;32mvenky1245@TIGER01686[00m:[01;34m~/test1[00m$ ls --help
+[?2004lUsage: ls [OPTION]... [FILE]...
+List information about the FILEs (the current directory by default).
+Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -a, --all                  do not ignore entries starting with .
+  -A, --almost-all           do not list implied . and ..
+      --author               with -l, print the author of each file
+  -b, --escape               print C-style escapes for nongraphic characters
+      --block-size=SIZE      with -l, scale sizes by SIZE when printing them;
+                               e.g., '--block-size=M'; see SIZE format below
+  -B, --ignore-backups       do not list implied entries ending with ~
+  -c                         with -lt: sort by, and show, ctime (time of last
+                               modification of file status information);
+                               with -l: show ctime and sort by name;
+                               otherwise: sort by ctime, newest first
+  -C                         list entries by columns
+      --color[=WHEN]         colorize the output; WHEN can be 'always' (default
+                               if omitted), 'auto', or 'never'; more info below
+  -d, --directory            list directories themselves, not their contents
+  -D, --dired                generate output designed for Emacs' dired mode
+  -f                         do not sort, enable -aU, disable -ls --color
+  -F, --classify             append indicator (one of */=>@|) to entries
+      --file-type            likewise, except do not append '*'
+      --format=WORD          across -x, commas -m, horizontal -x, long -l,
+                               single-column -1, verbose -l, vertical -C
+      --full-time            like -l --time-style=full-iso
+  -g                         like -l, but do not list owner
+      --group-directories-first
+                             group directories before files;
+                               can be augmented with a --sort option, but any
+                               use of --sort=none (-U) disables grouping
+  -G, --no-group             in a long listing, don't print group names
+  -h, --human-readable       with -l and -s, print sizes like 1K 234M 2G etc.
+      --si                   likewise, but use powers of 1000 not 1024
+  -H, --dereference-command-line
+                             follow symbolic links listed on the command line
+      --dereference-command-line-symlink-to-dir
+                             follow each command line symbolic link
+                               that points to a directory
+      --hide=PATTERN         do not list implied entries matching shell PATTERN
+                               (overridden by -a or -A)
+      --hyperlink[=WHEN]     hyperlink file names; WHEN can be 'always'
+                               (default if omitted), 'auto', or 'never'
+      --indicator-style=WORD  append indicator with style WORD to entry names:
+                               none (default), slash (-p),
+                               file-type (--file-type), classify (-F)
+  -i, --inode                print the index number of each file
+  -I, --ignore=PATTERN       do not list implied entries matching shell PATTERN
+  -k, --kibibytes            default to 1024-byte blocks for disk usage;
+                               used only with -s and per directory totals
+  -l                         use a long listing format
+  -L, --dereference          when showing file information for a symbolic
+                               link, show information for the file the link
+                               references rather than for the link itself
+  -m                         fill width with a comma separated list of entries
+  -n, --numeric-uid-gid      like -l, but list numeric user and group IDs
+  -N, --literal              print entry names without quoting
+  -o                         like -l, but do not list group information
+  -p, --indicator-style=slash
+                             append / indicator to directories
+  -q, --hide-control-chars   print ? instead of nongraphic characters
+      --show-control-chars   show nongraphic characters as-is (the default,
+                               unless program is 'ls' and output is a terminal)
+  -Q, --quote-name           enclose entry names in double quotes
+      --quoting-style=WORD   use quoting style WORD for entry names:
+                               literal, locale, shell, shell-always,
+                               shell-escape, shell-escape-always, c, escape
+                               (overrides QUOTING_STYLE environment variable)
+  -r, --reverse              reverse order while sorting
+  -R, --recursive            list subdirectories recursively
+  -s, --size                 print the allocated size of each file, in blocks
+  -S                         sort by file size, largest first
+      --sort=WORD            sort by WORD instead of name: none (-U), size (-S),
+                               time (-t), version (-v), extension (-X)
+      --time=WORD            change the default of using modification times;
+                               access time (-u): atime, access, use;
+                               change time (-c): ctime, status;
+                               birth time: birth, creation;
+                             with -l, WORD determines which time to show;
+                             with --sort=time, sort by WORD (newest first)
+      --time-style=TIME_STYLE  time/date format with -l; see TIME_STYLE below
+  -t                         sort by time, newest first; see --time
+  -T, --tabsize=COLS         assume tab stops at each COLS instead of 8
+  -u                         with -lt: sort by, and show, access time;
+                               with -l: show access time and sort by name;
+                               otherwise: sort by access time, newest first
+  -U                         do not sort; list entries in directory order
+  -v                         natural sort of (version) numbers within text
+  -w, --width=COLS           set output width to COLS.  0 means no limit
+  -x                         list entries by lines instead of by columns
+  -X                         sort alphabetically by entry extension
+  -Z, --context              print any security context of each file
+  -1                         list one file per line.  Avoid '\n' with -q or -b
+      --help     display this help and exit
+      --version  output version information and exit
+
+The SIZE argument is an integer and optional unit (example: 10K is 10*1024).
+Units are K,M,G,T,P,E,Z,Y (powers of 1024) or KB,MB,... (powers of 1000).
+Binary prefixes can be used, too: KiB=K, MiB=M, and so on.
+
+The TIME_STYLE argument can be full-iso, long-iso, iso, locale, or +FORMAT.
+FORMAT is interpreted like in date(1).  If FORMAT is FORMAT1<newline>FORMAT2,
+then FORMAT1 applies to non-recent files and FORMAT2 to recent files.
+TIME_STYLE prefixed with 'posix-' takes effect only outside the POSIX locale.
+Also the TIME_STYLE environment variable sets the default style to use.
+
+Using color to distinguish file types is disabled both by default and
+with --color=never.  With --color=auto, ls emits color codes only when
+standard output is connected to a terminal.  The LS_COLORS environment
+variable can change the settings.  Use the dircolors command to set it.
+
+Exit status:
+ 0  if OK,
+ 1  if minor problems (e.g., cannot access subdirectory),
+ 2  if serious trouble (e.g., cannot access command-line argument).
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Report any translation bugs to <https://translationproject.org/team/>
+Full documentation <https://www.gnu.org/software/coreutils/ls>
+or available locally via: info '(coreutils) ls invocation'
+[?2004h]0;venky1245@TIGER01686: ~/test1[01;32mvenky1245@TIGER01686[00m:[01;34m~/test1[00m$ ls -j
+[?2004lls: invalid option -- 'j'
+Try 'ls --help' for more information.
+[?2004h]0;venky1245@TIGER01686: ~/test1[01;32mvenky1245@TIGER01686[00m:[01;34m~/test1[00m$ ls -F folder1
+[?2004l[0m[01;34mnorth-pacific-gyre[0m/  [01;34msub_folder1[0m/  [01;34msub_folder2[0m/  [01;34msub_folder3[0m/
+[?2004h]0;venky1245@TIGER01686: ~/test1[01;32mvenky1245@TIGER01686[00m:[01;34m~/test1[00m$ cd /folder1
+[?2004lbash: cd: /folder1: No such file or directory
+[?2004h]0;venky1245@TIGER01686: ~/test1[01;32mvenky1245@TIGER01686[00m:[01;34m~/test1[00m$ cd -
+[?2004l/home/venky1245/test1/folder1
+[?2004h]0;venky1245@TIGER01686: ~/test1/folder1[01;32mvenky1245@TIGER01686[00m:[01;34m~/test1/folder1[00m$ cd .. 
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/test1[01;32mvenky1245@TIGER01686[00m:[01;34m~/test1[00m$ cd ..
+[?2004l[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ pwd
+[?2004l/home/venky1245
+[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ ls pwd 
+[?2004lls: cannot access 'pwd': No such file or directory
+[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ ls - [Kr -F
+[?2004l[0m[01;34mtest2[0m/  [01;34mtest1[0m/  my_unix_session
+[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ ld -r _[K_[K-F /home/venky1245/[K
+[?2004lld: -F may not be used without -shared
+[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ ls -r -F /home/venky1245
+[?2004l[0m[01;34mtest2[0m/  [01;34mtest1[0m/  my_unix_session
+[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ cd /home/venky1245/test1/folder1
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/test1/folder1[01;32mvenky1245@TIGER01686[00m:[01;34m~/test1/folder1[00m$ ls
+[?2004l[0m[01;34mnorth-pacific-gyre[0m  [01;34msub_folder1[0m  [01;34msub_folder2[0m  [01;34msub_folder3[0m
+[?2004h]0;venky1245@TIGER01686: ~/test1/folder1[01;32mvenky1245@TIGER01686[00m:[01;34m~/test1/folder1[00m$ ls -s folder1
+[?2004lls: cannot access 'folder1': No such file or directory
+[?2004h]0;venky1245@TIGER01686: ~/test1/folder1[01;32mvenky1245@TIGER01686[00m:[01;34m~/test1/folder1[00m$ ls -s [K[K[K
+[?2004l[0m[01;34mnorth-pacific-gyre[0m  [01;34msub_folder1[0m  [01;34msub_folder2[0m  [01;34msub_folder3[0m
+[?2004h]0;venky1245@TIGER01686: ~/test1/folder1[01;32mvenky1245@TIGER01686[00m:[01;34m~/test1/folder1[00m$ cd -
+[?2004l/home/venky1245
+[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ cd /home.ve[K[K[K/venky1245/test1/folde[K[K[K[K[K[K
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/test1[01;32mvenky1245@TIGER01686[00m:[01;34m~/test1[00m$ ls -s folder1
+[?2004ltotal 16
+4 [0m[01;34mnorth-pacific-gyre[0m  4 [01;34msub_folder1[0m  4 [01;34msub_folder2[0m  4 [01;34msub_folder3[0m
+[?2004h]0;venky1245@TIGER01686: ~/test1[01;32mvenky1245@TIGER01686[00m:[01;34m~/test1[00m$ ls
+[?2004l[0m[01;34mfolder1[0m  [01;34mfolder2[0m
+[?2004h]0;venky1245@TIGER01686: ~/test1[01;32mvenky1245@TIGER01686[00m:[01;34m~/test1[00m$ folder1
+[?2004lCommand 'folder1' not found, did you mean:
+  command 'folders' from deb mailutils-mh (1:3.14-1)
+  command 'folders' from deb mmh (0.4-4)
+  command 'folders' from deb nmh (1.7.1-11)
+  command 'folder' from deb mailutils-mh (1:3.14-1)
+  command 'folder' from deb mmh (0.4-4)
+  command 'folder' from deb nmh (1.7.1-11)
+Try: sudo apt install <deb name>
+[?2004h]0;venky1245@TIGER01686: ~/test1[01;32mvenky1245@TIGER01686[00m:[01;34m~/test1[00m$ cd /[K../folder1
+[?2004lbash: cd: ../folder1: No such file or directory
+[?2004h]0;venky1245@TIGER01686: ~/test1[01;32mvenky1245@TIGER01686[00m:[01;34m~/test1[00m$ cd /home/venky1245/test1/folder1
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/test1/folder1[01;32mvenky1245@TIGER01686[00m:[01;34m~/test1/folder1[00m$ ;[Kls
+[?2004l[0m[01;34mnorth-pacific-gyre[0m  [01;34msub_folder1[0m  [01;34msub_folder2[0m  [01;34msub_folder3[0m
+[?2004h]0;venky1245@TIGER01686: ~/test1/folder1[01;32mvenky1245@TIGER01686[00m:[01;34m~/test1/folder1[00m$ ls not[Krth-pacific-gyre/[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Krth-pacific-gyre/
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/test1/folder1[01;32mvenky1245@TIGER01686[00m:[01;34m~/test1/folder1[00m$ cd ..
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/test1[01;32mvenky1245@TIGER01686[00m:[01;34m~/test1[00m$ pwd
+[?2004l/home/venky1245/test1
+[?2004h]0;venky1245@TIGER01686: ~/test1[01;32mvenky1245@TIGER01686[00m:[01;34m~/test1[00m$ ls test1
+[?2004lls: cannot access 'test1': No such file or directory
+[?2004h]0;venky1245@TIGER01686: ~/test1[01;32mvenky1245@TIGER01686[00m:[01;34m~/test1[00m$ ls folder1
+[?2004l[0m[01;34mnorth-pacific-gyre[0m  [01;34msub_folder1[0m  [01;34msub_folder2[0m  [01;34msub_folder3[0m
+[?2004h]0;venky1245@TIGER01686: ~/test1[01;32mvenky1245@TIGER01686[00m:[01;34m~/test1[00m$ pwd
+[?2004l/home/venky1245/test1
+[?2004h]0;venky1245@TIGER01686: ~/test1[01;32mvenky1245@TIGER01686[00m:[01;34m~/test1[00m$ cd[K[Kcd..[K[K [K -
+[?2004l/home/venky1245/test1/folder1
+[?2004h]0;venky1245@TIGER01686: ~/test1/folder1[01;32mvenky1245@TIGER01686[00m:[01;34m~/test1/folder1[00m$ cd ..
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/test1[01;32mvenky1245@TIGER01686[00m:[01;34m~/test1[00m$ cd ..
+[?2004l[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ pwd
+[?2004l/home/venky1245
+[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ mkdir test3
+[?2004l[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ ls
+[?2004lmy_unix_session  [0m[01;34mtest1[0m  [01;34mtest2[0m  [01;34mtest3[0m
+[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ ls _[K-F
+[?2004lmy_unix_session  [0m[01;34mtest1[0m/  [01;34mtest2[0m/  [01;34mtest3[0m/
+[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ mkdir -p ../p[Kts[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd /home/venky1245/test3
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/test3[01;32mvenky1245@TIGER01686[00m:[01;34m~/test3[00m$ pwd
+[?2004l/home/venky1245/test3
+[?2004h]0;venky1245@TIGER01686: ~/test3[01;32mvenky1245@TIGER01686[00m:[01;34m~/test3[00m$ mkdir -p /[K../po[Kroject/[K[K[K[K[K[K[K[K[K/project/data ../project/results
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/test3[01;32mvenky1245@TIGER01686[00m:[01;34m~/test3[00m$ ls -FR ../project
+[?2004l../project:
+[0m[01;34mdata[0m/  [01;34mresults[0m/
+
+../project/data:
+
+../project/results:
+[?2004h]0;venky1245@TIGER01686: ~/test3[01;32mvenky1245@TIGER01686[00m:[01;34m~/test3[00m$ cd ..
+[?2004l[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ pwd
+[?2004l/home/venky1245
+[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ cd /home/venky1245/test3
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/test3[01;32mvenky1245@TIGER01686[00m:[01;34m~/test3[00m$ nano draft.txt
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;33H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 6.2                      draft.txt                                [1;76H(B[m[29d(B[0;7m^G(B[m Help[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify[2d[?12l[?25h[?25l[1;47H(B[0;7m*[76G(B[m[?12l[?25h[2di[?25l[?12l[?25h[K[?25l[?12l[?25hc[?25l[?12l[?25hr[?25l[?12l[?25he[?25l[?12l[?25ha[?25l[?12l[?25ht[?25l[?12l[?25he[?25l[?12l[?25hd[?25l[?12l[?25h [?25l[?12l[?25ha[?25l[?12l[?25h [?25l[?12l[?25hn[?25l[?12l[?25he[?25l[?12l[?25hw[?25l[?12l[?25h [?25l[?12l[?25hf[?25l[?12l[?25h [?25l[?12l[?25ht[?25l[28d[K[?12l[?25h[2;16He[?25l[?12l[?25hx[?25l[?12l[?25ht[?25l[?12l[?25h [?25l[?12l[?25hf[?25l[?12l[?25hi[?25l[?12l[?25hl[?25l[?12l[?25he[?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h.[?25l[?12l[?25h.[?25l[?12l[?25h.[?25l[?12l[?25h.[?25l[?12l[?25h.[?25l[?12l[?25h.[?25l[?12l[?25h.[?25l[?12l[?25h.[?25l[?12l[?25h.[?25l[?12l[?25h.[?25l[?12l[?25h.[?25l[?12l[?25h.[?25l[?12l[?25h.[?25l[?12l[?25h.[?25l[?12l[?25h.[?25l[?12l[?25h.[?25l[?12l[?25h.[?25l[29;16H    (B[0;7mM-D(B[m DOS Format     (B[0;7mM-A(B[m Append   [58G(B[0;7mM-B(B[m Backup File[30;2H(B[0;7mC(B[m Cancel[16G    (B[0;7mM-M(B[m Mac Format     (B[0;7mM-P(B[m Prepend        (B[0;7m^T(B[m Browse[K[28d(B[0;7mFile Name to Write: draft.txt                                                [28;30H(B[m[?12l[?25h[?25l[?12l[?25h[?25l [1K (B[0;7m[ Writing... ](B[m[K[1;47H(B[0;7m [76G(B[m[28;31H(B[0;7m[ Wrote 1 line ](B[m[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[58G   (B[0;7m^T(B[m Execute[K[30;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste       (B[0;7m^J(B[m Justify[?12l[?25h[2;41H[?25l[29;16H    (B[0;7mM-D(B[m DOS Format     (B[0;7mM-A(B[m Append   [58G(B[0;7mM-B(B[m Backup File[30;2H(B[0;7mC(B[m Cancel[16G    (B[0;7mM-M(B[m Mac Format     (B[0;7mM-P(B[m Prepend        (B[0;7m^T(B[m Browse[K[28d(B[0;7mFile Name to Write: draft.txt                                                [28;30H(B[m[?12l[?25h[?25l[?12l[?25h[?25l [1K (B[0;7m[ Writing... ](B[m[K[1;76H[28;31H(B[0;7m[ Wrote 1 line ](B[m[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[58G   (B[0;7m^T(B[m Execute[K[30;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste       (B[0;7m^J(B[m Justify[?12l[?25h[2;41H[?25l[29;16H    (B[0;7mM-D(B[m DOS Format     (B[0;7mM-A(B[m Append   [58G(B[0;7mM-B(B[m Backup File[30;2H(B[0;7mC(B[m Cancel[16G    (B[0;7mM-M(B[m Mac Format     (B[0;7mM-P(B[m Prepend        (B[0;7m^T(B[m Browse[K[28d(B[0;7mFile Name to Write: draft.txt                                                [28;30H(B[m[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l [1K (B[0;7m[ Writing... ](B[m[K[1;76H[28;31H(B[0;7m[ Wrote 1 line ](B[m[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[58G   (B[0;7m^T(B[m Execute[K[30;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste       (B[0;7m^J(B[m Justify[?12l[?25h[2;41H[?25l[1;47H(B[0;7m*[76G(B[m[3d[?12l[?25h[?25l[28d(B[0;7mSave modified buffer?                                                        [29;1H Y(B[m Yes[K[30d(B[0;7m N(B[m No  [30;16H (B[0;7m^C(B[m Cancel[K[28;23H[?12l[?25h[?25l[29d(B[0;7m^G(B[m Help[29;20H(B[0;7mM-D(B[m DOS Format     (B[0;7mM-A(B[m Append[29;58H(B[0;7mM-B(B[m Backup File[30d(B[0;7m^C(B[m Cancel[17G   (B[0;7mM-M(B[m Mac Format     (B[0;7mM-P(B[m Prepend[30;58H(B[0;7m^T(B[m Browse[28d(B[0;7mFile Name to Write: draft.txt(B[m[?12l[?25h[?25l(B[0;7my(B[m[?12l[?25h[?25l(B[0;7m (B[m[?12l[?25h[?25l [1K (B[0;7m[ Writing... ](B[m[K[1;47H(B[0;7m [76G(B[m[28;31H(B[0;7m[ Wrote 2 lines ](B[m[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;venky1245@TIGER01686: ~/test3[01;32mvenky1245@TIGER01686[00m:[01;34m~/test3[00m$ ls
+[?2004ldraft.txt
+[?2004h]0;venky1245@TIGER01686: ~/test3[01;32mvenky1245@TIGER01686[00m:[01;34m~/test3[00m$ touch my_file.txt
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/test3[01;32mvenky1245@TIGER01686[00m:[01;34m~/test3[00m$ ls
+[?2004ldraft.txt  my_file.txt
+[?2004h]0;venky1245@TIGER01686: ~/test3[01;32mvenky1245@TIGER01686[00m:[01;34m~/test3[00m$ rm my_file.txt
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/test3[01;32mvenky1245@TIGER01686[00m:[01;34m~/test3[00m$ ls
+[?2004ldraft.txt
+[?2004h]0;venky1245@TIGER01686: ~/test3[01;32mvenky1245@TIGER01686[00m:[01;34m~/test3[00m$ mv test3/drafdt[K[Kt.txt test3/quotes.txt
+[?2004lmv: cannot stat 'test3/draft.txt': No such file or directory
+[?2004h]0;venky1245@TIGER01686: ~/test3[01;32mvenky1245@TIGER01686[00m:[01;34m~/test3[00m$ ls
+[?2004ldraft.txt
+[?2004h]0;venky1245@TIGER01686: ~/test3[01;32mvenky1245@TIGER01686[00m:[01;34m~/test3[00m$ cd -
+[?2004l/home/venky1245
+[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ cd /home/venky1245/test3
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/test3[01;32mvenky1245@TIGER01686[00m:[01;34m~/test3[00m$ ls
+[?2004ldraft.txt
+[?2004h]0;venky1245@TIGER01686: ~/test3[01;32mvenky1245@TIGER01686[00m:[01;34m~/test3[00m$ '[Kcd -
+[?2004l/home/venky1245
+[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ mv test3/draft.txt test3/qui[Kotes.txt
+[?2004l[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ ls
+[?2004lmy_unix_session  [0m[01;34mproject[0m  [01;34mtest1[0m  [01;34mtest2[0m  [01;34mtest3[0m
+[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ mv /home/venky1245/test3
+[?2004lmv: missing destination file operand after '/home/venky1245/test3'
+Try 'mv --help' for more information.
+[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ cd ..
+[?2004l[?2004h]0;venky1245@TIGER01686: /home[01;32mvenky1245@TIGER01686[00m:[01;34m/home[00m$ cd /home/venky1245
+[?2004l[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ ls
+[?2004lmy_unix_session  [0m[01;34mproject[0m  [01;34mtest1[0m  [01;34mtest2[0m  [01;34mtest3[0m
+[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ ls test3
+[?2004lquotes.txt
+[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ cp quotes.txt test3[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd ..
+[?2004l[?2004h]0;venky1245@TIGER01686: /home[01;32mvenky1245@TIGER01686[00m:[01;34m/home[00m$ cd /home/venky1245
+[?2004l[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ cp quotes.txt test3/quotations.txt
+[?2004lcp: cannot stat 'quotes.txt': No such file or directory
+[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ cd test3
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/test3[01;32mvenky1245@TIGER01686[00m:[01;34m~/test3[00m$ cd test3p quotes.txt test3/quotations.txt
+[?2004lcp: cannot create regular file 'test3/quotations.txt': No such file or directory
+[?2004h]0;venky1245@TIGER01686: ~/test3[01;32mvenky1245@TIGER01686[00m:[01;34m~/test3[00m$ cp quotes.txt test3/quotations.txt[1Pquotations.txt[1Pquotations.txt[1Pquotations.txt[1Pquotations.txt[1Pquotations.txt[1Pquotations.txt
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/test3[01;32mvenky1245@TIGER01686[00m:[01;34m~/test3[00m$ ls
+[?2004lquotations.txt  quotes.txt
+[?2004h]0;venky1245@TIGER01686: ~/test3[01;32mvenky1245@TIGER01686[00m:[01;34m~/test3[00m$ cp -r teste[K[K[K[K[K[K[K[K[K[K[Kcd -
+[?2004l/home/venky1245
+[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ cp -r teste[K3 test3_backup
+[?2004l[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ ls
+[?2004lmy_unix_session  [0m[01;34mproject[0m  [01;34mtest1[0m  [01;34mtest2[0m  [01;34mtest3[0m  [01;34mtest3_backup[0m
+[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ ls test3 test3_backup/[K
+[?2004ltest3:
+quotations.txt  quotes.txt
+
+test3_backup:
+quotations.txt  quotes.txt
+[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ [K]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ [K]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ [K]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ [K]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ [K]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ [K]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ [K]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ [K]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ [K]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ [K]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ [K]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ [K]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ ls
+[?2004lmy_unix_session  [0m[01;34mproject[0m  [01;34mtest1[0m  [01;34mtest2[0m  [01;34mtest3[0m  [01;34mtest3_backup[0m
+[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ cd teste[K3
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/test3[01;32mvenky1245@TIGER01686[00m:[01;34m~/test3[00m$ ls
+[?2004lquotations.txt  quotes.txt
+[?2004h]0;venky1245@TIGER01686: ~/test3[01;32mvenky1245@TIGER01686[00m:[01;34m~/test3[00m$ cp quotes.txt quotes.txt
+[?2004lcp: 'quotes.txt' and 'quotes.txt' are the same file
+[?2004h]0;venky1245@TIGER01686: ~/test3[01;32mvenky1245@TIGER01686[00m:[01;34m~/test3[00m$ mv quotes.txt quotes.txt
+[?2004lmv: 'quotes.txt' and 'quotes.txt' are the same file
+[?2004h]0;venky1245@TIGER01686: ~/test3[01;32mvenky1245@TIGER01686[00m:[01;34m~/test3[00m$ pwd
+[?2004l/home/venky1245/test3
+[?2004h]0;venky1245@TIGER01686: ~/test3[01;32mvenky1245@TIGER01686[00m:[01;34m~/test3[00m$ mv quotes.txt [K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd -
+[?2004l/home/venky1245
+[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ mv quotes.txt test3/
+[?2004lmv: cannot stat 'quotes.txt': No such file or directory
+[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ cd test3
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/test3[01;32mvenky1245@TIGER01686[00m:[01;34m~/test3[00m$ mv quotes.txt test2/
+[?2004lmv: cannot move 'quotes.txt' to 'test2/': Not a directory
+[?2004h]0;venky1245@TIGER01686: ~/test3[01;32mvenky1245@TIGER01686[00m:[01;34m~/test3[00m$ mmk dir [K[K[K[K[K[K[Kk d[K[Kdir test2_sub 
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/test3[01;32mvenky1245@TIGER01686[00m:[01;34m~/test3[00m$ ls
+[?2004lquotations.txt  quotes.txt  [0m[01;34mtest2_sub[0m
+[?2004h]0;venky1245@TIGER01686: ~/test3[01;32mvenky1245@TIGER01686[00m:[01;34m~/test3[00m$ mv quotez.txt tesr[Kt2_sub[1P[1@s[C[C[C[C[C[C[C[C[C[C[C[C[C[C/
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/test3[01;32mvenky1245@TIGER01686[00m:[01;34m~/test3[00m$ ls 
+[?2004lquotations.txt  [0m[01;34mtest2_sub[0m
+[?2004h]0;venky1245@TIGER01686: ~/test3[01;32mvenky1245@TIGER01686[00m:[01;34m~/test3[00m$ cd test2_sub
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/test3/test2_sub[01;32mvenky1245@TIGER01686[00m:[01;34m~/test3/test2_sub[00m$ ls
+[?2004lquotes.txt
+[?2004h]0;venky1245@TIGER01686: ~/test3/test2_sub[01;32mvenky1245@TIGER01686[00m:[01;34m~/test3/test2_sub[00m$ cd -
+[?2004l/home/venky1245/test3
+[?2004h]0;venky1245@TIGER01686: ~/test3[01;32mvenky1245@TIGER01686[00m:[01;34m~/test3[00m$ cd -
+[?2004l/home/venky1245/test3/test2_sub
+[?2004h]0;venky1245@TIGER01686: ~/test3/test2_sub[01;32mvenky1245@TIGER01686[00m:[01;34m~/test3/test2_sub[00m$ cd ..
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/test3[01;32mvenky1245@TIGER01686[00m:[01;34m~/test3[00m$ cd ..
+[?2004l[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ pwd
+[?2004l/home/venky1245
+[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ cd /o[K[K[K[K[Kls
+[?2004lmy_unix_session  [0m[01;34mproject[0m  [01;34mtest1[0m  [01;34mtest2[0m  [01;34mtest3[0m  [01;34mtest3_backup[0m
+[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ cd project
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project[01;32mvenky1245@TIGER01686[00m:[01;34m~/project[00m$ ls
+[?2004l[0m[01;34mdata[0m  [01;34mresults[0m
+[?2004h]0;venky1245@TIGER01686: ~/project[01;32mvenky1245@TIGER01686[00m:[01;34m~/project[00m$ mk dire [K[K[K[K[K[Kdir shell-lesson-data/exercise-data/alkanes [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ks
+[?2004lmkdir: cannot create directory ‘shell-lesson-data/exercise-data/alkanes’: No such file or directory
+[?2004h]0;venky1245@TIGER01686: ~/project[01;32mvenky1245@TIGER01686[00m:[01;34m~/project[00m$ mk dir[K[K[K[Kdir shell-lesson-data
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project[01;32mvenky1245@TIGER01686[00m:[01;34m~/project[00m$ cd mkdir shell-lesson-data[C[C[1P shell-lesson-data[1P shell-lesson-data[1P shell-lesson-data[1P shell-lesson-data[1P shell-lesson-datac shell-lesson-datad shell-lesson-data
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data[00m$ mkdir exercise -[K[K-data
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data[00m$ cd exercise-data
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ mkdir alkanes [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ks
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ ls
+[?2004l[0m[01;34malkanes[0m
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ nan [Ko v[Kcubane.p db
+[?2004l[?2004h[?1049h[22;0;0t[1;23r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[21;33H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 6.2                      cubane.pdb                               [1;76H(B[m[22d(B[0;7m^G(B[m Help[22;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[22;61H(B[0;7m^T(B[m Execute[23d(B[0;7m^X(B[m Exit[23;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify[2d[?12l[?25h[?25l[1;48H(B[0;7m*[76G(B[m[?12l[?25h[2dj[?25l[?12l[?25h[K[?25l[?12l[?25hh[?25l[?12l[?25hi[?25l[22;16H    (B[0;7mM-D(B[m DOS Format     (B[0;7mM-A(B[m Append   [58G(B[0;7mM-B(B[m Backup File[23;2H(B[0;7mC(B[m Cancel[16G    (B[0;7mM-M(B[m Mac Format     (B[0;7mM-P(B[m Prepend        (B[0;7m^T(B[m Browse[K[21d(B[0;7mFile Name to Write: cubane.pdb                                               [21;31H(B[m[?12l[?25h[?25l[?12l[?25h[?25l[1K (B[0;7m[ Writing... ](B[m[K[1;48H(B[0;7m [76G(B[m[21;31H(B[0;7m[ Wrote 1 line ](B[m[22;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[58G   (B[0;7m^T(B[m Execute[K[23;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste       (B[0;7m^J(B[m Justify[?12l[?25h[2;3H[?25l[21d[J[23d[?12l[?25h[23;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ ls
+[?2004l[0m[01;34malkanes[0m  cubane.pdb
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ cd alkan[K[K[K[K[K[K[K[Krm cubane.pdb [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kb
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ cd alkanes
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ nano  cubane.pdb
+[?2004l[?2004h[?1049h[22;0;0t[1;23r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[21;33H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 6.2                      cubane.pdb                               [1;76H(B[m[22d(B[0;7m^G(B[m Help[22;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[22;61H(B[0;7m^T(B[m Execute[23d(B[0;7m^X(B[m Exit[23;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify[2d[?12l[?25h[?25l[1;48H(B[0;7m*[76G(B[m[?12l[?25h[2dh[?25l[?12l[?25hi[?25l[22;16H    (B[0;7mM-D(B[m DOS Format     (B[0;7mM-A(B[m Append   [58G(B[0;7mM-B(B[m Backup File[23;2H(B[0;7mC(B[m Cancel[16G    (B[0;7mM-M(B[m Mac Format     (B[0;7mM-P(B[m Prepend        (B[0;7m^T(B[m Browse[K[21d(B[0;7mFile Name to Write: cubane.pdb                                               [21;31H(B[m[?12l[?25h[?25l[1K (B[0;7m[ Writing... ](B[m[K[1;48H(B[0;7m [76G(B[m[21;31H(B[0;7m[ Wrote 1 line ](B[m[22;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[58G   (B[0;7m^T(B[m Execute[K[23;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste       (B[0;7m^J(B[m Justify[?12l[?25h[2;3H[?25l[21d[J[23d[?12l[?25h[23;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ ls'[K
+[?2004lcubane.pdb
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ nsan[K[K[Kano  methane.pdb
+[?2004l[?2004h[?1049h[22;0;0t[1;23r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[21;33H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 6.2                     methane.pdb                               [1;76H(B[m[22d(B[0;7m^G(B[m Help[22;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[22;61H(B[0;7m^T(B[m Execute[23d(B[0;7m^X(B[m Exit[23;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify[2d[?12l[?25h[?25l[1;48H(B[0;7m*[76G(B[m[?12l[?25h[2dm[?25l[?12l[?25he[?25l[?12l[?25ht[?25l[?12l[?25hh[?25l[?12l[?25ha[?25l[?12l[?25hn[?25l[?12l[?25he[?25l[22;16H    (B[0;7mM-D(B[m DOS Format     (B[0;7mM-A(B[m Append   [58G(B[0;7mM-B(B[m Backup File[23;2H(B[0;7mC(B[m Cancel[16G    (B[0;7mM-M(B[m Mac Format     (B[0;7mM-P(B[m Prepend        (B[0;7m^T(B[m Browse[K[21d(B[0;7mFile Name to Write: methane.pdb                                              [21;32H(B[m[?12l[?25h[?25l[1K (B[0;7m[ Writing... ](B[m[K[1;48H(B[0;7m [76G(B[m[21;31H(B[0;7m[ Wrote 1 line ](B[m[22;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[58G   (B[0;7m^T(B[m Execute[K[23;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste       (B[0;7m^J(B[m Justify[?12l[?25h[2;8H[?25l[21d[J[23d[?12l[?25h[23;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ no pe ntane.pdb
+[?2004lno: command not found
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ nano  pentane.pdb
+[?2004l[?2004h[?1049h[22;0;0t[1;23r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[21;33H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 6.2                     pentane.pdb                               [1;76H(B[m[22d(B[0;7m^G(B[m Help[22;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[22;61H(B[0;7m^T(B[m Execute[23d(B[0;7m^X(B[m Exit[23;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify[2d[?12l[?25h[?25l[1;48H(B[0;7m*[76G(B[m[?12l[?25h[2dp[?25l[?12l[?25he[?25l[?12l[?25hn[?25l[?12l[?25ht[?25l[?12l[?25ha[?25l[?12l[?25hn[?25l[?12l[?25he[?25l[22;16H    (B[0;7mM-D(B[m DOS Format     (B[0;7mM-A(B[m Append   [58G(B[0;7mM-B(B[m Backup File[23;2H(B[0;7mC(B[m Cancel[16G    (B[0;7mM-M(B[m Mac Format     (B[0;7mM-P(B[m Prepend        (B[0;7m^T(B[m Browse[K[21d(B[0;7mFile Name to Write: pentane.pdb                                              [21;32H(B[m[?12l[?25h[?25l[1K (B[0;7m[ Writing... ](B[m[K[1;48H(B[0;7m [76G(B[m[21;31H(B[0;7m[ Wrote 1 line ](B[m[22;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[58G   (B[0;7m^T(B[m Execute[K[23;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste       (B[0;7m^J(B[m Justify[?12l[?25h[2;8H[?25l[21d[J[23d[?12l[?25h[23;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ nano  ethae[Kne.pdb
+[?2004l[?2004h[?1049h[22;0;0t[1;23r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[21;33H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 6.2                      ethane.pdb                               [1;76H(B[m[22d(B[0;7m^G(B[m Help[22;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[22;61H(B[0;7m^T(B[m Execute[23d(B[0;7m^X(B[m Exit[23;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify[2d[?12l[?25h[?25l[1;48H(B[0;7m*[76G(B[m[?12l[?25h[2de[?25l[?12l[?25ht[?25l[?12l[?25hh[?25l[?12l[?25ha[?25l[?12l[?25hn[?25l[?12l[?25he[?25l[?12l[?25h[?25l[3d[?12l[?25h[?25l[21d(B[0;7mSave modified buffer?                                                        [22;1H Y(B[m Yes[K[23d(B[0;7m N(B[m No  [23;16H (B[0;7m^C(B[m Cancel[K[21;23H[?12l[?25h[?25l[22d(B[0;7m^G(B[m Help[22;20H(B[0;7mM-D(B[m DOS Format     (B[0;7mM-A(B[m Append[22;58H(B[0;7mM-B(B[m Backup File[23d(B[0;7m^C(B[m Cancel[17G   (B[0;7mM-M(B[m Mac Format     (B[0;7mM-P(B[m Prepend[23;58H(B[0;7m^T(B[m Browse[21d(B[0;7mFile Name to Write: ethane.pdb(B[m[?12l[?25h[?25l[?12l[?25h[?25l[1K (B[0;7m[ Writing... ](B[m[K[1;48H(B[0;7m [76G(B[m[21;31H(B[0;7m[ Wrote 2 lines ](B[m[J[23d[?12l[?25h[23;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ ls
+[?2004lcubane.pdb  ethane.pdb  methane.pdb  pentane.pdb
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ c cub ane.p[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[Kwv[Kc cu bane.pdb
+[?2004l1 1 3 cubane.pdb
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ wc *. pdb
+[?2004l 1  1  3 cubane.pdb
+ 2  1  8 ethane.pdb
+ 1  1  8 methane.pdb
+ 1  1  8 pentane.pdb
+ 5  4 27 total
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ [K]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ [K]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ [K]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ [K]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ [K]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ [K]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ [K]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ [K]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ [K]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ [K]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ wc -l  *.pdb
+[?2004l 1 cubane.pdb
+ 2 ethane.pdb
+ 1 methane.pdb
+ 1 pentane.pdb
+ 5 total
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ wc -l [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kl
+[?2004l
+^C
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ wcx - l[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[Kwc -l  *.pdb > lengths.txt
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ ls le ngths.txt
+[?2004llengths.txt
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ cat l engths.txt
+[?2004l 1 cubane.pdb
+ 2 ethane.pdb
+ 1 methane.pdb
+ 1 pentane.pdb
+ 5 total
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ sort  -n lengths.txt
+[?2004l 1 cubane.pdb
+ 1 methane.pdb
+ 1 pentane.pdb
+ 2 ethane.pdb
+ 5 total
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ sort  -n lengths.txt > sorted-lengths.txt
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ head  -n 1 sprte[K[K[K[Koe[Krted-lengths.txt 
+[?2004l 1 cubane.pdb
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ echo  The echo commn[Kand prints text
+[?2004lThe echo command prints text
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ echo  hello > testfile01.txt
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ echo  hello >> testfile02.txt
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ cat t estfile01.txt 
+[?2004lhello
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ cat t estfile02.txt 
+[?2004lhello
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ echo  hi >> testfile02.txt 
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ cat t estfile02.txt 
+[?2004lhello
+hi
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ cd -
+[?2004l/home/venky1245/project/shell-lesson-data/exercise-data
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ cd[K[Kcd ..
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data[00m$ cd ..
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project[01;32mvenky1245@TIGER01686[00m:[01;34m~/project[00m$ cd[K[Khome
+[?2004lCommand 'home' not found, did you mean:
+  command 'hime' from deb hime (0.9.11+dfsg-2build1)
+  command 'hose' from deb netpipes (4.2-8build1)
+Try: sudo apt install <deb name>
+[?2004h]0;venky1245@TIGER01686: ~/project[01;32mvenky1245@TIGER01686[00m:[01;34m~/project[00m$ cd ..
+[?2004l[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ pwd
+[?2004l/home/venky1245
+[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ cd /home/venky1245/sh[K[Ktest[K[K[K[Kproject/shell-lesson-data/exercise-data/
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ ls
+[?2004l[0m[01;34malkanes[0m
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ cd alkanes
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ sort  -n lengths.txt | head -n 1
+[?2004l 1 cubane.pdb
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ wc -l  *.pdb | sort -n 
+[?2004l 1 cubane.pdb
+ 1 methane.pdb
+ 1 pentane.pdb
+ 2 ethane.pdb
+ 5 total
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ wc -l  *.pdb | sort -n | head -n 1
+[?2004l 1 cubane.pdb
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ wc -l  * | sort -n head -n 3
+[?2004lsort: cannot read: head: No such file or directory
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ wc -l  *.pdb | sort -n | head -n 3
+[?2004l 1 cubane.pdb
+ 1 methane.pdb
+ 1 pentane.pdb
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ cd .. [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K.
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ nano animal-c ounts
+[?2004l[?2004h[?1049h[22;0;0t[1;13r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[11;33H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 6.2                    animal-counts                              [1;76H(B[m[12d(B[0;7m^G(B[m Help[12;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[12;61H(B[0;7m^T(B[m Execute[13d(B[0;7m^X(B[m Exit[13;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify[2d[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[1;49H(B[0;7m*[76G(B[m[?12l[?25h[2d2[?25l[?12l[?25h0[?25l[?12l[?25h1[?25l[?12l[?25h2[?25l[?12l[?25h-[?25l[?12l[?25h1[?25l[?12l[?25h1[?25l[3d[?12l[?25h[?25l[?12l[?25h[2;8H[?25l[3d[?12l[?25h[?25l[?12l[?25h[2;8H[?25l[?12l[?25h-[?25l[?12l[?25h0[?25l[?12l[?25h5[?25l[?12l[?25h,[?25l[?12l[?25h [?25l[?12l[?25hd[?25l[11d[K[?12l[?25h[2;14He[?25l[?12l[?25he[?25l[?12l[?25hr[?25l[?12l[?25h,[?25l[?12l[?25h5[?25l[3d[?12l[?25h[?25l[?12l[?25h2[?25l[?12l[?25h0[?25l[?12l[?25h1[?25l[?12l[?25h2[?25l[?12l[?25h[?25l[?12l[?25h[2;19H[?25l[?12l[?25h[3d[?25l[?12l[?25h2[?25l[?12l[?25h0[?25l[?12l[?25h1[?25l[?12l[?25h2[?25l[?12l[?25h-[?25l[?12l[?25h1[?25l[?12l[?25h1[?25l[?12l[?25h-[?25l[?12l[?25h0[?25l[?12l[?25h5[?25l[?12l[?25h,[?25l[?12l[?25h [?25l[?12l[?25hr[?25l[?12l[?25ha[?25l[?12l[?25hb[?25l[?12l[?25hb[?25l[?12l[?25hi[?25l[?12l[?25hy[?25l[?12l[?25h,[?25l[?12l[?25h [?25l[?12l[?25h2[?25l[?12l[?25h2[?25l[4d[?12l[?25h[?25l[?12l[?25h[3;23H[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h22[K[?25l[?12l[?25h2[?25l[?12l[?25h2[?25l[?12l[?25h[4d[?25l[?12l[?25h2[?25l[?12l[?25h0[?25l[?12l[?25h1[?25l[?12l[?25h2[?25l[?12l[?25h-[?25l[?12l[?25h1[?25l[?12l[?25h1[?25l[?12l[?25h-[?25l[?12l[?25h0[?25l[?12l[?25h5[?25l[?12l[?25h,[?25l[?12l[?25h [?25l[?12l[?25hr[?25l[?12l[?25ha[?25l[?12l[?25hc[?25l[?12l[?25hc[?25l[?12l[?25ho[?25l[?12l[?25hn[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[1P[?25l[?12l[?25h[3d[?25l[?12l[?25h [?25l[?12l[?25h[1P[?25l[?12l[?25h[4d[?25l[?12l[?25h [?25l[?12l[?25h[1P[?25l[?12l[?25hr[?25l[?12l[?25ha[?25l[?12l[?25hc[?25l[?12l[?25hc[?25l[?12l[?25ho[?25l[?12l[?25hn[?25l[?12l[?25h[5d[?25l[?12l[?25h[4;18H[?25l[?12l[?25h,[?25l[?12l[?25h7[?25l[5d[?12l[?25h[?25l[?12l[?25h2[?25l[?12l[?25h0[?25l[?12l[?25h1[?25l[?12l[?25h2[?25l[?12l[?25h-[?25l[?12l[?25h1[?25l[?12l[?25h1[?25l[?12l[?25h-[?25l[?12l[?25h0[?25l[?12l[?25h6[?25l[?12l[?25h,[?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25hr[?25l[?12l[?25ha[?25l[?12l[?25hb[?25l[?12l[?25hb[?25l[?12l[?25hi[?25l[?12l[?25ht[?25l[?12l[?25h,[?25l[?12l[?25h1[?25l[?12l[?25h9[?25l[6d[?12l[?25h[?25l[?12l[?25h2[?25l[?12l[?25h0[?25l[?12l[?25h1[?25l[?12l[?25h2[?25l[?12l[?25h-[?25l[?12l[?25h1[?25l[?12l[?25h1[?25l[?12l[?25h-[?25l[?12l[?25h0[?25l[?12l[?25h6[?25l[?12l[?25h.[?25l[?12l[?25hd[?25l[?12l[?25he[?25l[?12l[?25he[?25l[?12l[?25hr[?25l[?12l[?25h,[?25l[?12l[?25h2[?25l[7d[?12l[?25h[?25l[?12l[?25h2[?25l[?12l[?25h0[?25l[?12l[?25h1[?25l[?12l[?25h2[?25l[?12l[?25h-[?25l[?12l[?25h1[?25l[?12l[?25h1[?25l[?12l[?25h-[?25l[?12l[?25h0[?25l[?12l[?25h6[?25l[?12l[?25h,[?25l[?12l[?25hf[?25l[?12l[?25ho[?25l[?12l[?25hx[?25l[?12l[?25h,[?25l[?12l[?25h0[?25l[?12l[?25h4[?25l[8d[?12l[?25h[?25l[?12l[?25h2[?25l[?12l[?25h0[?25l[?12l[?25h1[?25l[?12l[?25h2[?25l[?12l[?25h-[?25l[?12l[?25h1[?25l[?12l[?25h1[?25l[?12l[?25h-[?25l[?12l[?25h0[?25l[?12l[?25h7[?25l[?12l[?25h,[?25l[?12l[?25hr[?25l[?12l[?25ha[?25l[?12l[?25hb[?25l[?12l[?25hb[?25l[?12l[?25hi[?25l[?12l[?25ht[?25l[?12l[?25h,[?25l[?12l[?25h1[?25l[?12l[?25h6[?25l[9d[?12l[?25h[?25l[?12l[?25h2[?25l[?12l[?25h0[?25l[?12l[?25h1[?25l[?12l[?25h2[?25l[?12l[?25h-[?25l[?12l[?25h1[?25l[?12l[?25h1[?25l[?12l[?25h-[?25l[?12l[?25h0[?25l[?12l[?25h7[?25l[?12l[?25h,[?25l[?12l[?25hb[?25l[?12l[?25he[?25l[?12l[?25ha[?25l[?12l[?25hr[?25l[?12l[?25h,[?25l[?12l[?25h1[?25l[12d    (B[0;7mM-D(B[m DOS Format     (B[0;7mM-A(B[m Append   [58G(B[0;7mM-B(B[m Backup File[13;2H(B[0;7mC(B[m Cancel[16G    (B[0;7mM-M(B[m Mac Format     (B[0;7mM-P(B[m Prepend        (B[0;7m^T(B[m Browse[K[11d(B[0;7mFile Name to Write: animal-counts                                            [11;34H(B[m[?12l[?25h[?25l[1K (B[0;7m[ Writing... ](B[m[K[1;49H(B[0;7m [76G(B[m[11;31H(B[0;7m[ Wrote 8 lines ](B[m[12;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[58G   (B[0;7m^T(B[m Execute[K[13;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste       (B[0;7m^J(B[m Justify[?12l[?25h[9;18H[?25l[11d[J[13d[?12l[?25h[13;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ ls
+[?2004l[0m[01;34malkanes[0m  animal-counts
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ an[K[Kcat animal_[K=[K-counts 
+[?2004l2012-11-05,deer,5
+2012-11-05,rabbiy,22
+2012-11-05,raccon,7
+2012-11-06,rabbit,19
+2012-11-06.deer,2
+2012-11-06,fox,04
+2012-11-07,rabbit,16
+2012-11-07,bear,1
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ cat animal-counts [K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[Kls
+[?2004l[0m[01;34malkanes[0m  animal-counts
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ mv anm[Kimal-counts animals.csv
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ ls
+[?2004l[0m[01;34malkanes[0m  animals.csv
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ cat animals.csv 
+[?2004l2012-11-05,deer,5
+2012-11-05,rabbiy,22
+2012-11-05,raccon,7
+2012-11-06,rabbit,19
+2012-11-06.deer,2
+2012-11-06,fox,04
+2012-11-07,rabbit,16
+2012-11-07,bear,1
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ cat [K animals.csv | heafd[K[Kd -n 5 | tail _n [K[K[K-n 3 | sort -r >final.txt final.txt
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ cat final [K.txt 
+[?2004l2012-11-06.deer,2
+2012-11-06,rabbit,19
+2012-11-05,raccon,7
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ cat animald[Ks.c sv | head -n 5
+[?2004l2012-11-05,deer,5
+2012-11-05,rabbiy,22
+2012-11-05,raccon,7
+2012-11-06,rabbit,19
+2012-11-06.deer,2
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ cat animals.csv | head -n 5[1P[1P[1P[1P[1@t[1@a[1@i[1@l[C[C[C[C[C[K3
+[?2004l2012-11-06,fox,04
+2012-11-07,rabbit,16
+2012-11-07,bear,1
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ cut -d, -f 2  animals.csv
+[?2004ldeer
+rabbiy
+raccon
+rabbit
+2
+fox
+rabbit
+bear
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ cat animals.csv 
+[?2004l2012-11-05,deer,5
+2012-11-05,rabbiy,22
+2012-11-05,raccon,7
+2012-11-06,rabbit,19
+2012-11-06.deer,2
+2012-11-06,fox,04
+2012-11-07,rabbit,16
+2012-11-07,bear,1
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ cut -d,[K , -f 2  animals.csv | sort \[K| uniq
+[?2004l2
+bear
+deer
+fox
+rabbit
+rabbiy
+raccon
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ cat animals.csv 
+[?2004l2012-11-05,deer,5
+2012-11-05,rabbiy,22
+2012-11-05,raccon,7
+2012-11-06,rabbit,19
+2012-11-06.deer,2
+2012-11-06,fox,04
+2012-11-07,rabbit,16
+2012-11-07,bear,1
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ sort animals.csv | uniq -c
+[?2004l      1 2012-11-05,deer,5
+      1 2012-11-05,rabbiy,22
+      1 2012-11-05,raccon,7
+      1 2012-11-06,fox,04
+      1 2012-11-06,rabbit,19
+      1 2012-11-06.deer,2
+      1 2012-11-07,bear,1
+      1 2012-11-07,rabbit,16
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ sort -t, -k2, 2 animals.csv | in[K[Kuniq -c
+[?2004l      1 2012-11-06.deer,2
+      1 2012-11-07,bear,1
+      1 2012-11-05,deer,5
+      1 2012-11-06,fox,04
+      1 2012-11-06,rabbit,19
+      1 2012-11-07,rabbit,16
+      1 2012-11-05,rabbiy,22
+      1 2012-11-05,raccon,7
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ cut -d, -f 2  animals.csv | sort | uniq -c
+[?2004l      1 2
+      1 bear
+      1 deer
+      1 fox
+      2 rabbit
+      1 rabbiy
+      1 raccon
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ pwd
+[?2004l/home/venky1245/project/shell-lesson-data/exercise-data
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ cd ..
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data[00m$ nor[K[K[Kcat no[K[K[K[K[K[Kls'
+[?2004l[?2004h> ^C[?2004l[?2004h[?2004l
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data[00m$ ls
+[?2004l[0m[01;34mexercise-data[0m
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data[00m$ ls'[K
+[?2004l[0m[01;34mexercise-data[0m  north-pacific-gyre.txt
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data[00m$ cat north-pacific-gyre.txt  [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K 
+[?2004l300 NENE01729A.txt
+300 NENE01729B.txt
+300 NENE01736A.txt
+300 NENE01751A.txt
+300 NENE01751B.txt
+300 NENE01812A.txt[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data[00m$ WC -L *.TXT [K[K[K[K[K[K[K[K[K[K[K[K^C[?2004l[?2004h[?2004l
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data[00m$ wc -l *.txt | sort -n \ hea d -n 5
+[?2004lsort: cannot read: ' head': No such file or directory
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data[00m$ wc -l *.txt | sort -n \ head -n 5[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C head [1P[A]0;venky1245@TIGER01686: ~/project/shell-lesson-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C| head[1@ [A]0;venky1245@TIGER01686: ~/project/shell-lesson-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+[?2004l5 north-pacific-gyre.txt
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data[00m$ wc -l *.txt | sort -n | tai l -n 5
+[?2004l5 north-pacific-gyre.txt
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data[00m$ ls
+[?2004l[0m[01;34mexercise-data[0m  [01;34mnorth-pacific-gyre[0m
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data[00m$ cd north-pacific-gyre/
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ ls
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ nano NEN E02040b.txt
+[?2004l[?2004h[?1049h[22;0;0t[1;13r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[11;23H(B[0;1m[37m[41m[ Directory '.' is not writable ][39;49m(B[m[H(B[0;7m  GNU nano 6.2                    NENE02040b.txt                             [1;76H(B[m[12d(B[0;7m^G(B[m Help[12;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[12;61H(B[0;7m^T(B[m Execute[13d(B[0;7m^X(B[m Exit[13;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify[2d[?12l[?25h[?25l[1;50H(B[0;7m*[76G(B[m[?12l[?25h[2dN[?25l[?12l[?25hE[?25l[?12l[?25hN[?25l[?12l[?25hE[?25l[?12l[?25h0[?25l[?12l[?25h2[?25l[?12l[?25h0[?25l[?12l[?25h4[?25l[?12l[?25h0[?25l[?12l[?25hB[?25l[12;16H    (B[0;7mM-D(B[m DOS Format     (B[0;7mM-A(B[m Append   [58G(B[0;7mM-B(B[m Backup File[13;2H(B[0;7mC(B[m Cancel[16G    (B[0;7mM-M(B[m Mac Format     (B[0;7mM-P(B[m Prepend        (B[0;7m^T(B[m Browse[K[11d(B[0;7mFile Name to Write: NENE02040b.txt                                           [11;35H(B[m[?12l[?25h[?25l[11;13H[1K (B[0;1m[37m[41m[ Error writing NENE02040b.txt: Permission denied ][39;49m(B[m[K[12;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[58G   (B[0;7m^T(B[m Execute[K[13;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste       (B[0;7m^J(B[m Justify[?12l[?25h[2;11H[?25l[11d(B[0;7mSave modified buffer?                                                        [12;1H Y(B[m Yes[K[13d(B[0;7m N(B[m No  [13;16H (B[0;7m^C(B[m Cancel[K[11;23H[?12l[?25h[?25l[12d(B[0;7m^G(B[m Help[12;20H(B[0;7mM-D(B[m DOS Format     (B[0;7mM-A(B[m Append[12;58H(B[0;7mM-B(B[m Backup File[13d(B[0;7m^C(B[m Cancel[17G   (B[0;7mM-M(B[m Mac Format     (B[0;7mM-P(B[m Prepend[13;58H(B[0;7m^T(B[m Browse[11d(B[0;7mFile Name to Write: NENE02040b.txt(B[m[?12l[?25h[?25l[11;13H[1K (B[0;1m[37m[41m[ Error writing NENE02040b.txt: Permission denied ][39;49m(B[m[K[12;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[58G   (B[0;7m^T(B[m Execute[K[13;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste       (B[0;7m^J(B[m Justify[?12l[?25h[2;11H[?25l[12;16H    (B[0;7mM-D(B[m DOS Format     (B[0;7mM-A(B[m Append   [58G(B[0;7mM-B(B[m Backup File[13;2H(B[0;7mC(B[m Cancel[16G    (B[0;7mM-M(B[m Mac Format     (B[0;7mM-P(B[m Prepend        (B[0;7m^T(B[m Browse[K[11d(B[0;7mFile Name to Write: NENE02040b.txt                                           [11;35H(B[m[?12l[?25h[?25l[11;13H[1K (B[0;1m[37m[41m[ Error writing NENE02040b.txt: Permission denied ][39;49m(B[m[K[12;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[58G   (B[0;7m^T(B[m Execute[K[13;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste       (B[0;7m^J(B[m Justify[?12l[?25h[2;11H[?25l[12;16H    (B[0;7mM-D(B[m DOS Format     (B[0;7mM-A(B[m Append   [58G(B[0;7mM-B(B[m Backup File[13;2H(B[0;7mC(B[m Cancel[16G    (B[0;7mM-M(B[m Mac Format     (B[0;7mM-P(B[m Prepend        (B[0;7m^T(B[m Browse[K[11d(B[0;7mFile Name to Write: NENE02040b.txt                                           [11;35H(B[m[?12l[?25h[?25l[11;13H[1K (B[0;1m[37m[41m[ Error writing NENE02040b.txt: Permission denied ][39;49m(B[m[K[12;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[58G   (B[0;7m^T(B[m Execute[K[13;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste       (B[0;7m^J(B[m Justify[?12l[?25h[2;11H[?25l[11d(B[0;7mSave modified buffer?                                                        [12;1H Y(B[m Yes[K[13d(B[0;7m N(B[m No  [13;16H (B[0;7m^C(B[m Cancel[K[11;23H[?12l[?25h[?25l[J[13d[?12l[?25h[13;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ ls
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ lsnano NENE02040b.txt
+[?2004l[?2004h[?1049h[22;0;0t[1;13r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[11;23H(B[0;1m[37m[41m[ Directory '.' is not writable ][39;49m(B[m[H(B[0;7m  GNU nano 6.2                    NENE02040b.txt                             [1;76H(B[m[12d(B[0;7m^G(B[m Help[12;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[12;61H(B[0;7m^T(B[m Execute[13d(B[0;7m^X(B[m Exit[13;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify[2d[?12l[?25h[?25l[1;50H(B[0;7m*[76G(B[m[?12l[?25h[2dh[?25l[?12l[?25hi[?25l[?12l[?25h [?25l[?12l[?25hh[?25l[?12l[?25hi[?25l[?12l[?25h [?25l[?12l[?25hh[?25l[?12l[?25hi[?25l[?12l[?25h [?25l[3d[?12l[?25h[?25l[12;16H    (B[0;7mM-D(B[m DOS Format     (B[0;7mM-A(B[m Append   [58G(B[0;7mM-B(B[m Backup File[13;2H(B[0;7mC(B[m Cancel[16G    (B[0;7mM-M(B[m Mac Format     (B[0;7mM-P(B[m Prepend        (B[0;7m^T(B[m Browse[K[11d(B[0;7mFile Name to Write: NENE02040b.txt                                           [11;35H(B[m[?12l[?25h[?25l[11;13H[1K (B[0;1m[37m[41m[ Error writing NENE02040b.txt: Permission denied ][39;49m(B[m[K[12;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[58G   (B[0;7m^T(B[m Execute[K[13;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste       (B[0;7m^J(B[m Justify[?12l[?25h[3d[?25l[11d(B[0;7mSave modified buffer?                                                        [12;1H Y(B[m Yes[K[13d(B[0;7m N(B[m No  [13;16H (B[0;7m^C(B[m Cancel[K[11;23H[?12l[?25h[?25l[J[13d[?12l[?25h[13;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ nano NENE02040b.txt[A]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ ls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnano NENE02040b.txt[A]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ ls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd north-pacific-gyre/[A]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ ls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cwc -l *.txt | sort -n | tail -n 5head[C[C[C[C[C\[C[C[C[C[C[C[C[C[C[C[A]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ cat north[6P-pacific-gyre.txt [A]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ ls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C'cd ..[2Ppwdcut -d, -f 2 animals.csv | sort | uniq -c[A]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ sort -t, [5P-k2,2 animals.csv[C[C[C[C[C[C[C[C[C[C[A]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ [C[C[C[C[Canim[10P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ cat anima[10Pls.csv [A]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ [Cut -d , -f 2 animals.csv | sort | uniq[A]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ [Cat animals.csv [K[A]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ [Cut -d, -f 2 animals.csv[A]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ [Cat animals.csv | tail -n 3head -n 5[A]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ [C[C[C[Cfinal.txt [K[A]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ [C[C[C[Canimals.csv | head -n 5 | tail -n 3 | sort -r > final.txt[C[C[C[C[C[C[C[C[K[A]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ ls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmv animal-counts animals.csv[A]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ ls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat animal-counts [A]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ ls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnano animal-counts[A]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ [3Pcd ..
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnano animal-counts[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[KNEN E02040B.txt
+[?2004l[?2004h[?1049h[22;0;0t[1;13r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[11;23H(B[0;1m[37m[41m[ DirectoScript started on 2023-04-30 17:02:19+05:30 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="120" LINES="22"]
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ ech [Ko loops
+[?2004lloops
+[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ pwd
+[?2004l/home/venky1245
+[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ ls
+[?2004lmy_unix_session  [0m[01;34mproject[0m  [01;34mtest1[0m  [01;34mtest2[0m  [01;34mtest3[0m  [01;34mtest3_backup[0m
+[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ my_[K[K[Kcd /home/venky1245/[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kls
+[?2004lmy_unix_session  [0m[01;34mproject[0m  [01;34mtest1[0m  [01;34mtest2[0m  [01;34mtest3[0m  [01;34mtest3_backup[0m
+[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ cd project/[K
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project[01;32mvenky1245@TIGER01686[00m:[01;34m~/project[00m$ ls
+[?2004l[0m[01;34mdata[0m  [01;34mresults[0m  [01;34mshell-lesson-data[0m
+[?2004h]0;venky1245@TIGER01686: ~/project[01;32mvenky1245@TIGER01686[00m:[01;34m~/project[00m$ mk dir exercise-data/creatures
+[?2004lmk: command not found
+[?2004h]0;venky1245@TIGER01686: ~/project[01;32mvenky1245@TIGER01686[00m:[01;34m~/project[00m$ mkdir e dir exercise-data/creatures[1P
+[?2004lmkdir: cannot create directory ‘exercise-data/creatures’: No such file or directory
+[?2004h]0;venky1245@TIGER01686: ~/project[01;32mvenky1245@TIGER01686[00m:[01;34m~/project[00m$ mkdir exercise-data
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project[01;32mvenky1245@TIGER01686[00m:[01;34m~/project[00m$ cd exercise-data/
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/exercise-data[00m$ n[Kmkdr[Kir creatures
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/exercise-data[00m$ cd creatures/
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/exercise-data/creatures[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/exercise-data/creatures[00m$ nano basilisk.dat C[K[K
+[?2004l[?2004h[?1049h[22;0;0t[1;22r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[20;55H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 6.2                                          basilisk.dat                                                    [1;119H(B[m[21d(B[0;7m^G(B[m Help[21;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[21;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[22d(B[0;7m^X(B[m Exit[22;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[?12l[?25h[?25l[1;70H(B[0;7m*[119G(B[m[?12l[?25h[2dC[?25l[?12l[?25hL[?25l[?12l[?25hA[?25l[?12l[?25hS[?25l[?12l[?25hS[?25l[?12l[?25hI[?25l[?12l[?25hF[?25l[?12l[?25hI[?25l[?12l[?25hC[?25l[?12l[?25hA[?25l[?12l[?25hT[?25l[?12l[?25hI[?25l[?12l[?25hO[?25l[?12l[?25hN[?25l[?12l[?25h [?25l[?12l[?25h:[?25l[?12l[?25h [?25l[?12l[?25hB[?25l[?12l[?25hA[?25l[20d[K[?12l[?25h[2;20HS[?25l[?12l[?25hI[?25l[?12l[?25hL[?25l[?12l[?25hI[?25l[?12l[?25hS[?25l[?12l[?25hC[?25l[?12l[?25hU[?25l[?12l[?25hS[?25l[?12l[?25h [?25l[?12l[?25hV[?25l[?12l[?25hU[?25l[?12l[?25hL[?25l[?12l[?25hG[?25l[?12l[?25hA[?25l[?12l[?25hR[?25l[?12l[?25hI[?25l[?12l[?25hS[?25l[21;16H[15X[21;31H(B[0;7mM-D(B[m DOS Format       [21;61H(B[0;7mM-A(B[m Append[16X[21;93H(B[0;7mB(B[m Backup File[K[22;2H(B[0;7mC(B[m Cancel[16G[15X[22;31H(B[0;7mM-M(B[m Mac Format         [61G(B[0;7mM-P(B[m Prepend[19X[22;91H(B[0;7m^T(B[m Browse[K[20d(B[0;7mFile Name to Write: basilisk.dat                                                                                        [20;33H(B[m[?12l[?25h[?25l[20;53H[1K (B[0;7m[ Writing... ](B[m[K[1;70H(B[0;7m [119G(B[m[20;53H(B[0;7m[ Wrote 1 line ](B[m[21;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[21;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location[93G(B[0;7mU(B[m Undo       (B[0;7mM-A(B[m Set Mark[22;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo [106G(B[0;7mM-6(B[m Copy[?12l[?25h[2;37H[?25l[20d[J[22d[?12l[?25h[22;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/exercise-data/creatures[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/exercise-data/creatures[00m$ NANO [K[K[K[K[Knano minotaur.dat
+[?2004l[?2004h[?1049h[22;0;0t[1;22r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[20;55H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 6.2                                          minotaur.dat                                                    [1;119H(B[m[21d(B[0;7m^G(B[m Help[21;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[21;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[22d(B[0;7m^X(B[m Exit[22;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[?12l[?25h[?25l[1;70H(B[0;7m*[119G(B[m[?12l[?25h[2dC[?25l[?12l[?25hL[?25l[?12l[?25hA[?25l[?12l[?25hS[?25l[?12l[?25hS[?25l[?12l[?25hI[?25l[?12l[?25hF[?25l[?12l[?25hI[?25l[?12l[?25hC[?25l[?12l[?25hA[?25l[?12l[?25hT[?25l[?12l[?25hI[?25l[?12l[?25hO[?25l[?12l[?25hN[?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h:[?25l[?12l[?25h [?25l[?12l[?25hB[?25l[20d[K[?12l[?25h[2;18HS[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25hb[?25l[?12l[?25ho[?25l[?12l[?25hs[?25l[?12l[?25h [?25l[?12l[?25hh[?25l[?12l[?25ho[?25l[?12l[?25hm[?25l[?12l[?25hi[?25l[?12l[?25hn[?25l[?12l[?25hu[?25l[?12l[?25hs[?25l[21;16H[15X[21;31H(B[0;7mM-D(B[m DOS Format       [21;61H(B[0;7mM-A(B[m Append[16X[21;93H(B[0;7mB(B[m Backup File[K[22;2H(B[0;7mC(B[m Cancel[16G[15X[22;31H(B[0;7mM-M(B[m Mac Format         [61G(B[0;7mM-P(B[m Prepend[19X[22;91H(B[0;7m^T(B[m Browse[K[20d(B[0;7mFile Name to Write: minotaur.dat                                                                                        [20;33H(B[m[?12l[?25h[?25l[20;53H[1K (B[0;7m[ Writing... ](B[m[K[1;70H(B[0;7m [119G(B[m[20;53H(B[0;7m[ Wrote 1 line ](B[m[21;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[21;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location[93G(B[0;7mU(B[m Undo       (B[0;7mM-A(B[m Set Mark[22;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo [106G(B[0;7mM-6(B[m Copy[?12l[?25h[2;28H[?25l[20d[J[22d[?12l[?25h[22;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/exercise-data/creatures[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/exercise-data/creatures[00m$ nano unicorn.dat
+[?2004l[?2004h[?1049h[22;0;0t[1;22r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[20;55H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 6.2                                           unicorn.dat                                                    [1;119H(B[m[21d(B[0;7m^G(B[m Help[21;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[21;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[22d(B[0;7m^X(B[m Exit[22;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[?12l[?25h[?25l[1;70H(B[0;7m*[119G(B[m[?12l[?25h[2dC[?25l[?12l[?25hL[?25l[?12l[?25hA[?25l[?12l[?25hS[?25l[?12l[?25hS[?25l[?12l[?25hI[?25l[?12l[?25hF[?25l[?12l[?25hI[?25l[?12l[?25hC[?25l[?12l[?25hA[?25l[?12l[?25hT[?25l[?12l[?25hI[?25l[?12l[?25hO[?25l[?12l[?25hN[?25l[?12l[?25h.[?25l[?12l[?25hD[?25l[?12l[?25hA[?25l[?12l[?25hT[?25l[?12l[?25h [?25l[20d[K[?12l[?25h[2;19H[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25hN[?25l[?12l[?25h:[?25l[?12l[?25h [?25l[?12l[?25he[?25l[?12l[?25hq[?25l[?12l[?25hu[?25l[?12l[?25hu[?25l[?12l[?25hs[?25l[?12l[?25h [?25l[?12l[?25hm[?25l[?12l[?25ho[?25l[?12l[?25hn[?25l[?12l[?25ho[?25l[?12l[?25hc[?25l[?12l[?25he[?25l[?12l[?25hr[?25l[?12l[?25hi[?25l[?12l[?25h [?25l[?12l[?25ho[?25l[?12l[?25hs[?25l[21;16H[15X[21;31H(B[0;7mM-D(B[m DOS Format       [21;61H(B[0;7mM-A(B[m Append[16X[21;93H(B[0;7mB(B[m Backup File[K[22;2H(B[0;7mC(B[m Cancel[16G[15X[22;31H(B[0;7mM-M(B[m Mac Format         [61G(B[0;7mM-P(B[m Prepend[19X[22;91H(B[0;7m^T(B[m Browse[K[20d(B[0;7mFile Name to Write: unicorn.dat                                                                                         [20;32H(B[m[?12l[?25h[?25l[20;53H[1K (B[0;7m[ Writing... ](B[m[K[1;70H(B[0;7m [119G(B[m[20;53H(B[0;7m[ Wrote 1 line ](B[m[21;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[21;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location[93G(B[0;7mU(B[m Undo       (B[0;7mM-A(B[m Set Mark[22;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo [106G(B[0;7mM-6(B[m Copy[?12l[?25h[2;32H[?25l[20d[J[22d[?12l[?25h[22;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/exercise-data/creatures[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/exercise-data/creatures[00m$ head -n 5 basilisk.dat minotaur.dat unicorn.dat 
+[?2004l==> basilisk.dat <==
+CLASSIFICATION : BASILISCUS VULGARIS
+
+==> minotaur.dat <==
+CLASSIFICATION: bos hominus
+
+==> unicorn.dat <==
+CLASSIFICATION: equus monoceros
+[?2004h]0;venky1245@TIGER01686: ~/project/exercise-data/creatures[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/exercise-data/creatures[00m$ for t[Kfilename i[K[K[K[K[K[K[K[K[Kile in basilisk.dat minotaur.dat unicorn.dat 
+[?2004l[?2004h> do 
+[?2004l[?2004h> echo $file
+[?2004l[?2004h> head -n 2 file | tail -n 1
+[?2004l[?2004h> done
+[?2004lbasilisk.dat
+head: cannot open 'file' for reading: No such file or directory
+minotaur.dat
+head: cannot open 'file' for reading: No such file or directory
+unicorn.dat
+head: cannot open 'file' for reading: No such file or directory
+[?2004h]0;venky1245@TIGER01686: ~/project/exercise-data/creatures[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/exercise-data/creatures[00m$ ls
+[?2004lbasilisk.dat  minotaur.dat  unicorn.dat
+[?2004h]0;venky1245@TIGER01686: ~/project/exercise-data/creatures[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/exercise-data/creatures[00m$ cat bi[Kasiq[Klisk.dat 
+[?2004lCLASSIFICATION : BASILISCUS VULGARIS
+[?2004h]0;venky1245@TIGER01686: ~/project/exercise-data/creatures[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/exercise-data/creatures[00m$ for filename in basilisk.dat minotaur.dat unicorn.dat do [K[K[K
+[?2004l[?2004h> do 
+[?2004l[?2004h> echo filename[K[K[K[K[K[K[K[K$filename
+[?2004l[?2004h> head -n 2 $filename | tail -n 1
+[?2004l[?2004h> done
+[?2004lbasilisk.dat
+CLASSIFICATION : BASILISCUS VULGARIS
+minotaur.dat
+CLASSIFICATION: bos hominus
+unicorn.dat
+CLASSIFICATION: equus monoceros
+[?2004h]0;venky1245@TIGER01686: ~/project/exercise-data/creatures[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/exercise-data/creatures[00m$ for l in 0 1 2 3 4 5 6 67[K [K[K7 8 9 
+[?2004l[?2004h> do 
+[?2004l[?2004h> echp[Ko $l
+[?2004l[?2004h> done 
+[?2004l0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+[?2004h]0;venky1245@TIGER01686: ~/project/exercise-data/creatures[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/exercise-data/creatures[00m$ cd ..
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/exercise-data[00m$ cd alkanes
+[?2004lbash: cd: alkanes: No such file or directory
+[?2004h]0;venky1245@TIGER01686: ~/project/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/exercise-data[00m$ cd .
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/exercise-data[00m$ cd ..
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project[01;32mvenky1245@TIGER01686[00m:[01;34m~/project[00m$ cd /home/vek[Knky1245/sheq[Kll[K[K[K[K[Kproject/shell-lesson-data/[K[Ka
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data[00m$ ls
+[?2004l[0m[01;34mexercise-data[0m  [01;34mnorth-pacific-gyre[0m
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data[00m$ cd exercise-data/
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ cd alkanes/
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ for file in *.pdb
+[?2004l[?2004h> do
+[?2004l[?2004h> ls *.pdb
+[?2004l[?2004h> done
+[?2004lcubane.pdb  ethane.pdb  methane.pdb  pentane.pdb
+cubane.pdb  ethane.pdb  methane.pdb  pentane.pdb
+cubane.pdb  ethane.pdb  methane.pdb  pentane.pdb
+cubane.pdb  ethane.pdb  methane.pdb  pentane.pdb
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ for file in *.pdb; do ls *.pdb; done[1P[1P[1P[1P[1P[1@$[1@d[1P[1@f[1@i[1@l[1@e
+[?2004lcubane.pdb
+ethane.pdb
+methane.pdb
+pentane.pdb
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ [K]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ [K]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ [K]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ [K]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ [K]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ [K]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ [K]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ [K]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ [K]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ [K]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ [K]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ [K]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ for file in c*;do ls $file [K; done
+[?2004lcubane.pdb
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ for file in c*;do ls $file; done[1@*
+[?2004lcubane.pdb
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ cd.[K ,,
+[?2004lbash: cd: ,,: No such file or directory
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ cd ..
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ cd al[K[Kcrea[K[K[K[K[K[K[Kda[K[Kls
+[?2004l[0m[01;34malkanes[0m  animals.csv  final.txt
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ cd/h[K[K /home/venky1245/
+[?2004l[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ ls
+[?2004lmy_unix_session  [0m[01;34mproject[0m  [01;34mtest1[0m  [01;34mtest2[0m  [01;34mtest3[0m  [01;34mtest3_backup[0m
+[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ ls project
+[?2004l[0m[01;34mdata[0m  [01;34mexercise-data[0m  [01;34mresults[0m  [01;34mshell-lesson-data[0m
+[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ cd/[K /home [K[K[K[K[K[Kproject/exercise-data
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/exercise-data[00m$ ls
+[?2004l[0m[01;34mcreatures[0m
+[?2004h]0;venky1245@TIGER01686: ~/project/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/exercise-data[00m$ cd creatures/
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/exercise-data/creatures[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/exercise-data/creatures[00m$ ls
+[?2004lbasilisk.dat  minotaur.dat  unicorn.dat
+[?2004h]0;venky1245@TIGER01686: ~/project/exercise-data/creatures[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/exercise-data/creatures[00m$ for file in *.dat; do echo $file; jhead[K[K[K[K[Kg[Khead -n 100 $file | tail -n 20 ; done
+[?2004lbasilisk.dat
+CLASSIFICATION : BASILISCUS VULGARIS
+minotaur.dat
+CLASSIFICATION: bos hominus
+unicorn.dat
+CLASSIFICATION: equus monoceros
+[?2004h]0;venky1245@TIGER01686: ~/project/exercise-data/creatures[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/exercise-data/creatures[00m$ ls
+[?2004lbasilisk.dat  minotaur.dat  unicorn.dat
+[?2004h]0;venky1245@TIGER01686: ~/project/exercise-data/creatures[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/exercise-data/creatures[00m$ for fl in *.dt[Kat; do cp $fl orii[Kginal-$fl; f[Kdone
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/exercise-data/creatures[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/exercise-data/creatures[00m$ ls
+[?2004lbasilisk.dat  minotaur.dat  original-basilisk.dat  original-minotaur.dat  original-unicorn.dat  unicorn.dat
+[?2004h]0;venky1245@TIGER01686: ~/project/exercise-data/creatures[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/exercise-data/creatures[00m$ cd /home/venky1245
+[?2004l[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ ls
+[?2004lmy_unix_session  [0m[01;34mproject[0m  [01;34mtest1[0m  [01;34mtest2[0m  [01;34mtest3[0m  [01;34mtest3_backup[0m
+[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ ls project
+[?2004l[0m[01;34mdata[0m  [01;34mexercise-data[0m  [01;34mresults[0m  [01;34mshell-lesson-data[0m
+[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ ls shell_[K-le[K[K[K[K[K[K[K[K[K[K[Kcd porjec[K[K[K[K[Kroject/
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project[01;32mvenky1245@TIGER01686[00m:[01;34m~/project[00m$ ls shell-lesson-data/
+[?2004l[0m[01;34mexercise-data[0m  [01;34mnorth-pacific-gyre[0m
+[?2004h]0;venky1245@TIGER01686: ~/project[01;32mvenky1245@TIGER01686[00m:[01;34m~/project[00m$ cd shell-lesson-data/north-pacific-gyre/
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ ls
+[?2004lNENENENE02040B.txt
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ nano NENE01729A.TXT
+[?2004l[?2004h[?1049h[22;0;0t[1;12r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[10;44H(B[0;1m[37m[41m[ Directory '.' is not writable ][39;49m(B[m[H(B[0;7m  GNU nano 6.2                                         NENE01729A.TXT                                                   [1;119H(B[m[11d(B[0;7m^G(B[m Help[11;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[11;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[12d(B[0;7m^X(B[m Exit[12;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[?12l[?25h[?25l[10d[J[12d[?12l[?25h[12;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ nano NENE01729A.TXT[K[K[KTCT[K[K[K[K.[K
+[?2004l[?2004h[?1049h[22;0;0t[1;12r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[10;44H(B[0;1m[37m[41m[ Directory '.' is not writable ][39;49m(B[m[H(B[0;7m  GNU nano 6.2                                           NENE01729A                                                     [1;119H(B[m[11d(B[0;7m^G(B[m Help[11;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[11;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[12d(B[0;7m^X(B[m Exit[12;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[?12l[?25h[?25l[1;69H(B[0;7m*[119G(B[m[?12l[?25h[2dx[?25l[10d(B[0;7mSave modified buffer?                                                                                                   [11;1H Y(B[m Yes[K[12d(B[0;7m N(B[m No  [12;16H (B[0;7m^C(B[m Cancel[K[10;23H[?12l[?25h[?25l[J[12d[?12l[?25h[12;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ nano NENE01729A.txt
+[?2004l[?2004h[?1049h[22;0;0t[1;12r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[10;44H(B[0;1m[37m[41m[ Directory '.' is not writable ][39;49m(B[m[H(B[0;7m  GNU nano 6.2                                         NENE01729A.txt                                                   [1;119H(B[m[11d(B[0;7m^G(B[m Help[11;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[11;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[12d(B[0;7m^X(B[m Exit[12;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[?12l[?25h[?25l[1;71H(B[0;7m*[119G(B[m[3d[?12l[?25h[?25l[10d(B[0;7mSave modified buffer?                                                                                                   [11;1H Y(B[m Yes[K[12d(B[0;7m N(B[m No  [12;16H (B[0;7m^C(B[m Cancel[K[10;23H[?12l[?25h[?25l[J[12d[?12l[?25h[12;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ ls
+[?2004lNENENENE02040B.txt
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ mc [K[Kv NENENENE02040B.txt nene[K[K[K[KNENE0204B.TXT[K[K[Ktxt
+[?2004lmv: cannot move 'NENENENE02040B.txt' to 'NENE0204B.txt': Permission denied
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ cd ..
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data[00m$ ls
+[?2004l[0m[01;34mexercise-data[0m  [01;34mnorth-pacific-gyre[0m
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data[00m$ cd e[K[K[K[Kls exercise-data/
+[?2004l[0m[01;34malkanes[0m  animals.csv  final.txt
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data[00m$ a[Kcd exercise-data/alkanes/
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ ls
+[?2004lcubane.pdb  ethane.pdb  lengths.txt  methane.pdb  pentane.pdb  sorted-lengths.txt  testfile01.txt  testfile02.txt
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ for sp in cubane ethane methane:[K; do for temo in  25 39[K0 37 40 [K; do mkdir $sp-$temperature; done; done
+[?2004lmkdir: cannot create directory ‘cubane-’: File exists
+mkdir: cannot create directory ‘cubane-’: File exists
+mkdir: cannot create directory ‘cubane-’: File exists
+mkdir: cannot create directory ‘ethane-’: File exists
+mkdir: cannot create directory ‘ethane-’: File exists
+mkdir: cannot create directory ‘ethane-’: File exists
+mkdir: cannot create directory ‘methane-’: File exists
+mkdir: cannot create directory ‘methane-’: File exists
+mkdir: cannot create directory ‘methane-’: File exists
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ for sp in cubane ethane methane; do for temo in 25 30 37 40; do mkdir $sp-$temperature; done; done[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C in 25[1P[A]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cp in 2[1@5[A]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ ls
+[?2004l[0m[01;34mcubane-[0m    [01;34mcubane-37[0m   [01;34methane-[0m    [01;34methane-37[0m   lengths.txt  [01;34mmethane-30[0m  methane.pdb         testfile01.txt
+[01;34mcubane-25[0m  [01;34mcubane-40[0m   [01;34methane-25[0m  [01;34methane-40[0m   [01;34mmethane-[0m     [01;34mmethane-37[0m  pentane.pdb         testfile02.txt
+[01;34mcubane-30[0m  cubane.pdb  [01;34methane-30[0m  ethane.pdb  [01;34mmethane-25[0m   [01;34mmethane-40[0m  sorted-lengths.txt
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ rm cubane-
+[?2004lrm: cannot remove 'cubane-': Is a directory
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ ls
+[?2004l[0m[01;34mcubane-25[0m  [01;34mcubane-40[0m   [01;34methane-30[0m  ethane.pdb   [01;34mmethane-30[0m  methane.pdb         testfile01.txt
+[01;34mcubane-30[0m  cubane.pdb  [01;34methane-37[0m  lengths.txt  [01;34mmethane-37[0m  pentane.pdb         testfile02.txt
+[01;34mcubane-37[0m  [01;34methane-25[0m   [01;34methane-40[0m  [01;34mmethane-25[0m   [01;34mmethane-40[0m  sorted-lengths.txt
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ cd ..
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ ls
+[?2004l[0m[01;34malkanes[0m  animals.csv  final.txt
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ ls ani[Kimals.csv'[K
+[?2004lanimals.csv
+[?2004h]0;venky1245@TIGER01686: ~/projScript started on 2023-04-30 18:08:46+05:30 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="120" LINES="30"]
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ cd /[K[K[K[Kpwd
+[?2004l/home/venky1245
+[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ ls
+[?2004lmy_unix_session  [0m[01;34mproject[0m  [01;34mtest1[0m  [01;34mtest2[0m  [01;34mtest3[0m  [01;34mtest3_backup[0m
+[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ cd pro[K[K[K[K[K[Kls project
+[?2004l[0m[01;34mdata[0m  [01;34mexercise-data[0m  [01;34mresults[0m  [01;34mshell-lesson-data[0m
+[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ cd /project/shell-lesson-data
+[?2004lbash: cd: /project/shell-lesson-data: No such file or directory
+[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ cd project
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project[01;32mvenky1245@TIGER01686[00m:[01;34m~/project[00m$ cd /se[Kh[K[K[Kshell-lesson-data/
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data[00m$ mk dir [K[K[K[K[Kdir not[Krth-pacific-gyre/
+[?2004lmkdir: cannot create directory ‘north-pacific-gyre/’: File exists
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data[00m$ rm north-pacific-gyre/
+[?2004lrm: cannot remove 'north-pacific-gyre/': Is a directory
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data[00m$ mksir[K[K[Kdir north-pacific-gyre
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data[00m$ ls][K
+[?2004l[0m[01;34mexercise-data[0m  [01;34mnorth-pacific-gyre[0m
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data[00m$ cd north-pacific-gyre/
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ nano NENE010A.TXT[K[K[Ktxt'[K
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;55H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 6.2                                          NENE010A.txt                                                    [1;119H(B[m[29d(B[0;7m^G(B[m Help[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[?12l[?25h[?25l[1;70H(B[0;7m*[119G(B[m[?12l[?25h[2d0[?25l[?12l[?25h1[?25l[?12l[?25h0[?25l[?12l[?25hA[?25l[3d[?12l[?25h[?25l[29;16H[15X[29;31H(B[0;7mM-D(B[m DOS Format       [29;61H(B[0;7mM-A(B[m Append[16X[29;93H(B[0;7mB(B[m Backup File[K[30;2H(B[0;7mC(B[m Cancel[16G[15X[30;31H(B[0;7mM-M(B[m Mac Format         [61G(B[0;7mM-P(B[m Prepend[19X[30;91H(B[0;7m^T(B[m Browse[K[28d(B[0;7mFile Name to Write: NENE010A.txt                                                                                        [28;33H(B[m[?12l[?25h[?25l[28;53H[1K (B[0;7m[ Writing... ](B[m[K[1;70H(B[0;7m [119G(B[m[28;52H(B[0;7m[ Wrote 2 lines ](B[m[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location[93G(B[0;7mU(B[m Undo       (B[0;7mM-A(B[m Set Mark[30;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo [106G(B[0;7mM-6(B[m Copy[?12l[?25h[3d[?25l[28d[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ nano -p NENE010B [K.TXT [K[K[K[Ktt[Kxt NENE010C.txt
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;55H(B[0;7m[ New File ](B[m[28;47H(B[0;7m[ NENE010B.txt -- 0 lines ](B[m[H(B[0;7m  [1/2]                                              NENE010B.txt                                                       [1;119H(B[m[29d(B[0;7m^G(B[m Help[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[30d(B[0;7m^X(B[m Close[16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[?12l[?25h[?25l[1;67H(B[0;7m*[119G(B[m[?12l[?25h[2d0[?25l[?12l[?25h1[?25l[?12l[?25h0[?25l[?12l[?25hB[?25l[29;16H[15X[29;31H(B[0;7mM-D(B[m DOS Format       [29;61H(B[0;7mM-A(B[m Append[16X[29;93H(B[0;7mB(B[m Backup File[K[30;2H(B[0;7mC(B[m Cancel[16G[15X[30;31H(B[0;7mM-M(B[m Mac Format         [61G(B[0;7mM-P(B[m Prepend[19X[30;91H(B[0;7m^T(B[m Browse[K[28d(B[0;7mFile Name to Write: NENE010B.txt                                                                                        [28;33H(B[m[?12l[?25h[?25l[28;53H[1K (B[0;7m[ Writing... ](B[m[K[1;67H(B[0;7m [119G(B[m[28;53H(B[0;7m[ Wrote 1 line ](B[m[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location[93G(B[0;7mU(B[m Undo       (B[0;7mM-A(B[m Set Mark[30;2H(B[0;7mX(B[m Close [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo [106G(B[0;7mM-6(B[m Copy[?12l[?25h[2;5H[?25l[A(B[0;7m2[1;61HC[119G(B[m[28;47H(B[0;7m[ NENE010C.txt -- 0 lines ](B[m[1;4H(B[0;7m1/1[119G(B[m[30;4HExit [114G[2d[K[?12l[?25h[?25l[1;67H(B[0;7m*[119G(B[m[?12l[?25h[2d0[?25l[?12l[?25h1[?25l[?12l[?25h0[?25l[?12l[?25hC[?25l[29;16H[15X[29;31H(B[0;7mM-D(B[m DOS Format       [29;61H(B[0;7mM-A(B[m Append[16X[29;93H(B[0;7mB(B[m Backup File[K[30;2H(B[0;7mC(B[m Cancel[16G[15X[30;31H(B[0;7mM-M(B[m Mac Format         [61G(B[0;7mM-P(B[m Prepend[19X[30;91H(B[0;7m^T(B[m Browse[K[28d(B[0;7mFile Name to Write: NENE010C.txt                                                                                        [28;33H(B[m[?12l[?25h[?25l[28;53H[1K (B[0;7m[ Writing... ](B[m[K[1;67H(B[0;7m [119G(B[m[28;53H(B[0;7m[ Wrote 1 line ](B[m[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location[93G(B[0;7mU(B[m Undo       (B[0;7mM-A(B[m Set Mark[30;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo [106G(B[0;7mM-6(B[m Copy[?12l[?25h[2;5H[?25l[28d[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ ls
+[?2004lNENE010A.txt  NENE010B.txt  NENE010C.txt
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ nan [Ko do-stats.sh
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;55H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 6.2                                           do-stats.sh                                                    [1;119H(B[m[29d(B[0;7m^G(B[m Help[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[?12l[?25h[?25l[1;70H(B[0;7m*[119G(B[m[?12l[?25h[2df[?25l[?12l[?25ho[?25l[?12l[?25h[32mfor[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h f[?25l[?12l[?25h[32mfi[39m(B[m[?25l[?12l[?25hfil[?25l[?12l[?25he[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h i[?25l[?12l[?25h[32min[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h '[?25l[?12l[?25h[32m$[39m(B[m[?25l[?12l[?25h(B[0;1m[31m$@[39m(B[m[?25l[?12l[?25h(B[0;1m[33m'$@'[39m(B[m[?25l[3d[?12l[?25h[?25l[?12l[?25hf[?25l[?12l[?25h[K[?25l[28d[K[?12l[?25h[3dd[?25l[?12l[?25h[32mdo[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h e[?25l[?12l[?25h[42m [49m(B[m[K[?25l[4d[?12l[?25h[?25l[?12l[?25h[8G[42m[1K [49m(B[m[?25l[?12l[?25h[1K e[?25l[?12l[?25hh[?25l[?12l[?25h [?25l[?12l[?25hc[?25l[?12l[?25hh[?25l[?12l[?25h(B[0;1m[34mecho[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h @[?25l[?12l[?25hf[?25l[?12l[?25h[32mfi[39m(B[m[?25l[?12l[?25hfil[?25l[?12l[?25he[?25l[5d[?12l[?25h[?25l[?12l[?25h[8G[42m[1K [49m(B[m[?25l[?12l[?25h[1K b[?25l[?12l[?25ha[?25l[?12l[?25hs[?25l[?12l[?25hh[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h g[?25l[?12l[?25ho[?25l[?12l[?25ho[?25l[?12l[?25hs[?25l[?12l[?25ht[?25l[?12l[?25ha[?25l[?12l[?25ht[?25l[?12l[?25hs[?25l[?12l[?25h.[?25l[?12l[?25hs[?25l[?12l[?25hh[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h [32m$[39m(B[m[?25l[?12l[?25h(B[0;1m[31m$f[39m(B[m[?25l[?12l[?25h(B[0;1m[31mi[39m(B[m[?25l[?12l[?25h(B[0;1m[31ml[39m(B[m[?25l[?12l[?25h(B[0;1m[31me[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h s[?25l[?12l[?25ht[?25l[?12l[?25ha[?25l[?12l[?25ht[?25l[?12l[?25hs[?25l[?12l[?25h-[?25l[?12l[?25h[32m$[39m(B[m[?25l[?12l[?25h(B[0;1m[31m$f[39m(B[m[?25l[?12l[?25h(B[0;1m[31mi[39m(B[m[?25l[?12l[?25h(B[0;1m[31ml[39m(B[m[?25l[?12l[?25h(B[0;1m[31me[39m(B[m[?25l[6d[?12l[?25h[?25l[?12l[?25hd[?25l[?12l[?25h[32mdo[39m(B[m[?25l[?12l[?25hdon[?25l[?12l[?25h[32mdone[39m(B[m[?25l[29;16H[15X[29;31H(B[0;7mM-D(B[m DOS Format       [29;61H(B[0;7mM-A(B[m Append[16X[29;93H(B[0;7mB(B[m Backup File[K[30;2H(B[0;7mC(B[m Cancel[16G[15X[30;31H(B[0;7mM-M(B[m Mac Format         [61G(B[0;7mM-P(B[m Prepend[19X[30;91H(B[0;7m^T(B[m Browse[K[28d(B[0;7mFile Name to Write: do-stats.sh                                                                                         [28;32H(B[m[?12l[?25h[?25l[28;53H[1K (B[0;7m[ Writing... ](B[m[K[1;70H(B[0;7m [119G(B[m[28;52H(B[0;7m[ Wrote 5 lines ](B[m[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location[93G(B[0;7mU(B[m Undo       (B[0;7mM-A(B[m Set Mark[30;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo [106G(B[0;7mM-6(B[m Copy[?12l[?25h[6;5H[?25l[28d[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ bash do-stats.sh NENE*A.txt NENE*B.txt
+[?2004l@file
+bash: goostats.sh: No such file or directory
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ cat do-stats.sh 
+[?2004lfor file in '$@'
+do 
+	echo @file
+	bash goostats.sh $file stats-$file
+done
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ cat do-stats.sh bash do-stats.sh NENE*A.txt NENE*B.txt[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kfor file in '$@'; do echo @file; done
+[?2004l@file
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ cat do-stats.sh 
+[?2004lfor file in '$@'
+do 
+	echo @file
+	bash goostats.sh $file stats-$file
+done
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ nano d-[K[K[K[K[K[K[Krm do-stats.sh 
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ nano do-stats.sh
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;55H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 6.2                                           do-stats.sh                                                    [1;119H(B[m[29d(B[0;7m^G(B[m Help[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[?12l[?25h[?25l[1;70H(B[0;7m*[119G(B[m[?12l[?25h[2df[?25l[?12l[?25ho[?25l[?12l[?25h[32mfor[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h f[?25l[?12l[?25h[32mfi[39m(B[m[?25l[?12l[?25hfil[?25l[?12l[?25he[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h i[?25l[?12l[?25h[32min[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h '[?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h "[?25l[?12l[?25h[32m$[39m(B[m[?25l[?12l[?25h(B[0;1m[31m$@[39m(B[m[?25l[?12l[?25h(B[0;1m[33m"$@"[39m(B[m[?25l[3d[?12l[?25h[?25l[28d[K[?12l[?25h[3dd[?25l[?12l[?25h[32mdo[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h[42m     [49m(B[m[?25l[4d[?12l[?25h[?25l[?12l[?25h[8G[42m[1K [49m(B[m[?25l[?12l[?25h[K[?25l[3;9H[?12l[?25h[?25l[?12l[?25h[4G[K[?25l[?12l[?25h [?25l[4d[?12l[?25h[?25l[?12l[?25h[8G[42m[1K [49m(B[m[?25l[?12l[?25h[1K e[?25l[?12l[?25hc[?25l[?12l[?25hh[?25l[?12l[?25h(B[0;1m[34mecho[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h [32m$[39m(B[m[?25l[?12l[?25h(B[0;1m[31m$f[39m(B[m[?25l[?12l[?25h(B[0;1m[31mi[39m(B[m[?25l[?12l[?25h(B[0;1m[31ml[39m(B[m[?25l[?12l[?25h(B[0;1m[31me[39m(B[m[?25l[5d[?12l[?25h[?25l[?12l[?25h[8G[42m[1K [49m(B[m[?25l[?12l[?25h[1K b[?25l[?12l[?25ha[?25l[?12l[?25hs[?25l[?12l[?25hh[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h g[?25l[?12l[?25ho[?25l[?12l[?25ho[?25l[?12l[?25hs[?25l[?12l[?25ht[?25l[?12l[?25ha[?25l[?12l[?25ht[?25l[?12l[?25hs[?25l[?12l[?25h.[?25l[?12l[?25hs[?25l[?12l[?25hh[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h [32m$[39m(B[m[?25l[?12l[?25h(B[0;1m[31m$f[39m(B[m[?25l[?12l[?25h(B[0;1m[31mi[39m(B[m[?25l[?12l[?25h(B[0;1m[31ml[39m(B[m[?25l[?12l[?25h(B[0;1m[31me[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h s[?25l[?12l[?25ht[?25l[?12l[?25ha[?25l[?12l[?25ht[?25l[?12l[?25hs[?25l[?12l[?25h[32m=[39m(B[m[?25l[?12l[?25h [?25l[?12l[?25h-[?25l[?12l[?25h[32m$[39m(B[m[?25l[?12l[?25h(B[0;1m[31m$f[39m(B[m[?25l[?12l[?25h(B[0;1m[31mi[39m(B[m[?25l[?12l[?25h(B[0;1m[31ml[39m(B[m[?25l[?12l[?25h(B[0;1m[31me[39m(B[m[?25l[6d[?12l[?25h[?25l[?12l[?25hd[?25l[?12l[?25h[32mdo[39m(B[m[?25l[?12l[?25hdon[?25l[?12l[?25h[32mdone[39m(B[m[?25l[29;16H[15X[29;31H(B[0;7mM-D(B[m DOS Format       [29;61H(B[0;7mM-A(B[m Append[16X[29;93H(B[0;7mB(B[m Backup File[K[30;2H(B[0;7mC(B[m Cancel[16G[15X[30;31H(B[0;7mM-M(B[m Mac Format         [61G(B[0;7mM-P(B[m Prepend[19X[30;91H(B[0;7m^T(B[m Browse[K[28d(B[0;7mFile Name to Write: do-stats.sh                                                                                         [28;32H(B[m[?12l[?25h[?25l[28;53H[1K (B[0;7m[ Writing... ](B[m[K[1;70H(B[0;7m [119G(B[m[28;52H(B[0;7m[ Wrote 5 lines ](B[m[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location[93G(B[0;7mU(B[m Undo       (B[0;7mM-A(B[m Set Mark[30;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo [106G(B[0;7mM-6(B[m Copy[?12l[?25h[6;5H[?25l[28d[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ bash f[Kdo-stats.sh NENE*A.txt NENE*B.txt
+[?2004lNENE010A.txt
+bash: goostats.sh: No such file or directory
+NENE010B.txt
+bash: goostats.sh: No such file or directory
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ [K]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ [K]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ [K]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ [K]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ [K]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ [K]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ [K]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ [K]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ [K]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ [K]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ [K]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ [K]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ [K]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ [K]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ [K]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ [K]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ [K]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ pwd
+[?2004l/home/venky1245/project/shell-lesson-data/north-pacific-gyre
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/north-pacific-gyre[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/north-pacific-gyre[00m$ cd ..
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data[00m$ ls
+[?2004l[0m[01;34mexercise-data[0m  [01;34mnorth-pacific-gyre[0m
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data[00m$ cd e[K[K[K[Kls exercise-data/q[K
+[?2004l[0m[01;34malkanes[0m  animals.csv  final.txt
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data[00m$ cd exercise-data/alkanes/
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ s[Kls
+[?2004l[0m[01;34mcubane-25[0m  [01;34mcubane-40[0m   [01;34methane-30[0m  ethane.pdb   [01;34mmethane-30[0m  methane.pdb         testfile01.txt
+[01;34mcubane-30[0m  cubane.pdb  [01;34methane-37[0m  lengths.txt  [01;34mmethane-37[0m  pentane.pdb         testfile02.txt
+[01;34mcubane-37[0m  [01;34methane-25[0m   [01;34methane-40[0m  [01;34mmethane-25[0m   [01;34mmethane-40[0m  sorted-lengths.txt
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ nano longest [K.s [Kh 
+[?2004l[?2004h[?1049h[22;0;0t[1;13r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[11;55H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 6.2                                           longest.sh                                                     [1;119H(B[m[12d(B[0;7m^G(B[m Help[12;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[12;61H(B[0;7Script started on 2023-05-01 12:13:12+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="120" LINES="15"]
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ cd p[K[K[K[Kls
+[?2004lmy_unix_session  [0m[01;34mproject[0m  [01;34mtest1[0m  [01;34mtest2[0m  [01;34mtest3[0m  [01;34mtest3_backup[0m
+[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ cd projec[K[K[K[K[K[K[K[K[Kls project/
+[?2004l[0m[01;34mdata[0m  [01;34mexercise-data[0m  [01;34mresults[0m  [01;34mshell-lesson-data[0m
+[?2004h]0;venky1245@TIGER01686: ~[01;32mvenky1245@TIGER01686[00m:[01;34m~[00m$ cd project/
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project[01;32mvenky1245@TIGER01686[00m:[01;34m~/project[00m$ ls shell-lesson-data/
+[?2004l[0m[01;34mexercise-data[0m  [01;34mnorth-pacific-gyre[0m
+[?2004h]0;venky1245@TIGER01686: ~/project[01;32mvenky1245@TIGER01686[00m:[01;34m~/project[00m$ cd sheq[Kll-lesson-data/
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data[00m$ ls
+[?2004l[0m[01;34mexercise-data[0m  [01;34mnorth-pacific-gyre[0m
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data[00m$ ls exercise-data/
+[?2004l[0m[01;34malkanes[0m  animals.csv  final.txt
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data[00m$ cd exercise-data/alkanes/
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ nano middle.sh
+[?2004l[?2004h[?1049h[22;0;0t[1;15r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[13;55H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 6.2                                            middle.sh                                                     [1;119H(B[m[14d(B[0;7m^G(B[m Help[14;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[14;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[15d(B[0;7m^X(B[m Exit[15;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[?12l[?25h[?25l[1;69H(B[0;7m*[119G(B[m[?12l[?25h[2dh[?25l[?12l[?25he[?25l[?12l[?25ha[?25l[?12l[?25h(B[0;1m[34mhead[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h -[?25l[?12l[?25h(B[0;1m[35m -n[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h 1[?25l[?12l[?25h5[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h o[?25l[?12l[?25hc[?25l[?12l[?25ht[?25l[?12l[?25ha[?25l[?12l[?25hn[?25l[?12l[?25he[?25l[?12l[?25h.[?25l[?12l[?25hp[?25l[13d[K[?12l[?25h[2;20Hd[?25l[?12l[?25hb[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h [32m|[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h t[?25l[?12l[?25ha[?25l[?12l[?25hi[?25l[?12l[?25h(B[0;1m[34mtail[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h -[?25l[?12l[?25h(B[0;1m[35m -n[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h 5[?25l[?12l[?25h[42m [49m(B[m[?25l[3d[?12l[?25h[?25l[2;35H[?12l[?25h[?25l[?12l[?25h [?25l[14;16H[15X[14;31H(B[0;7mM-D(B[m DOS Format       [14;61H(B[0;7mM-A(B[m Append[16X[14;93H(B[0;7mB(B[m Backup File[K[15;2H(B[0;7mC(B[m Cancel[16G[15X[15;31H(B[0;7mM-M(B[m Mac Format         [61G(B[0;7mM-P(B[m Prepend[19X[15;91H(B[0;7m^T(B[m Browse[K[13d(B[0;7mFile Name to Write: middle.sh                                                                                           [13;30H(B[m[?12l[?25h[?25l[13;53H[1K (B[0;7m[ Writing... ](B[m[K[1;69H(B[0;7m [119G(B[m[13;53H(B[0;7m[ Wrote 1 line ](B[m[14;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[14;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location[93G(B[0;7mU(B[m Undo       (B[0;7mM-A(B[m Set Mark[15;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo [106G(B[0;7mM-6(B[m Copy[?12l[?25h[2;34H[?25l[13d[J[15d[?12l[?25h[15;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ bash middle.sh
+[?2004lhead: cannot open 'octane.pdb' for reading: No such file or directory
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ ls
+[?2004l[0m[01;34mcubane-25[0m  [01;34mcubane-40[0m   [01;34methane-30[0m  ethane.pdb   [01;34mmethane-25[0m  [01;34mmethane-40[0m   pentane.pdb         testfile02.txt
+[01;34mcubane-30[0m  cubane.pdb  [01;34methane-37[0m  lengths.txt  [01;34mmethane-30[0m  methane.pdb  sorted-lengths.txt
+[01;34mcubane-37[0m  [01;34methane-25[0m   [01;34methane-40[0m  longest.sh   [01;34mmethane-37[0m  middle.sh    testfile01.txt
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ nano octane.pdb
+[?2004l[?2004h[?1049h[22;0;0t[1;15r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[13;55H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 6.2                                           octane.pdb                                                     [1;119H(B[m[14d(B[0;7m^G(B[m Help[14;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[14;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[15d(B[0;7m^X(B[m Exit[15;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[?12l[?25h[?25l[1;69H(B[0;7m*[119G(B[m[?12l[?25h[2do[?25l[?12l[?25hc[?25l[?12l[?25ht[?25l[?12l[?25ha[?25l[?12l[?25hn[?25l[?12l[?25he[?25l[14;16H[15X[14;31H(B[0;7mM-D(B[m DOS Format       [14;61H(B[0;7mM-A(B[m Append[16X[14;93H(B[0;7mB(B[m Backup File[K[15;2H(B[0;7mC(B[m Cancel[16G[15X[15;31H(B[0;7mM-M(B[m Mac Format         [61G(B[0;7mM-P(B[m Prepend[19X[15;91H(B[0;7m^T(B[m Browse[K[13d(B[0;7mFile Name to Write: octane.pdb                                                                                          [13;31H(B[m[?12l[?25h[?25l[13;53H[1K (B[0;7m[ Writing... ](B[m[K[1;69H(B[0;7m [119G(B[m[13;53H(B[0;7m[ Wrote 1 line ](B[m[14;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[14;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location[93G(B[0;7mU(B[m Undo       (B[0;7mM-A(B[m Set Mark[15;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo [106G(B[0;7mM-6(B[m Copy[?12l[?25h[2;7H[?25l[13d[J[15d[?12l[?25h[15;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ bash middle.sh 
+[?2004loctane
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ nano middle1.sh
+[?2004l[?2004h[?1049h[22;0;0t[1;15r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[13;55H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 6.2                                           middle1.sh                                                     [1;119H(B[m[14d(B[0;7m^G(B[m Help[14;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[14;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[15d(B[0;7m^X(B[m Exit[15;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[?12l[?25h[?25l[1;69H(B[0;7m*[119G(B[m[?12l[?25h[2dh[?25l[?12l[?25he[?25l[?12l[?25ha[?25l[?12l[?25h(B[0;1m[34mhead[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h -[?25l[?12l[?25h(B[0;1m[35m -n[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h 1[?25l[?12l[?25h5[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h "[?25l[?12l[?25h[32m$[39m(B[m[?25l[?12l[?25h(B[0;1m[31m$1[39m(B[m[?25l[?12l[?25h(B[0;1m[33m"$1"[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h [32m|[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h t[?25l[13d[K[?12l[?25h[2;20Ha[?25l[?12l[?25hi[?25l[?12l[?25h(B[0;1m[34mtail[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h -[?25l[?12l[?25h(B[0;1m[35m -n[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h 5[?25l[14;16H[15X[14;31H(B[0;7mM-D(B[m DOS Format       [14;61H(B[0;7mM-A(B[m Append[16X[14;93H(B[0;7mB(B[m Backup File[K[15;2H(B[0;7mC(B[m Cancel[16G[15X[15;31H(B[0;7mM-M(B[m Mac Format         [61G(B[0;7mM-P(B[m Prepend[19X[15;91H(B[0;7m^T(B[m Browse[K[13d(B[0;7mFile Name to Write: middle1.sh                                                                                          [13;31H(B[m[?12l[?25h[?25l[13;53H[1K (B[0;7m[ Writing... ](B[m[K[1;69H(B[0;7m [119G(B[m[13;53H(B[0;7m[ Wrote 1 line ](B[m[14;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[14;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location[93G(B[0;7mU(B[m Undo       (B[0;7mM-A(B[m Set Mark[15;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo [106G(B[0;7mM-6(B[m Copy[?12l[?25h[2;28H[?25l[13d[J[15d[?12l[?25h[15;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ bash middle1.sh octane.pdb
+[?2004loctane
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ ls 
+[?2004l[0m[01;34mcubane-25[0m  [01;34mcubane-40[0m   [01;34methane-30[0m  ethane.pdb   [01;34mmethane-25[0m  [01;34mmethane-40[0m   middle1.sh   sorted-lengths.txt
+[01;34mcubane-30[0m  cubane.pdb  [01;34methane-37[0m  lengths.txt  [01;34mmethane-30[0m  methane.pdb  octane.pdb   testfile01.txt
+[01;34mcubane-37[0m  [01;34methane-25[0m   [01;34methane-40[0m  longest.sh   [01;34mmethane-37[0m  middle.sh    pentane.pdb  testfile02.txt
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ nano middle2.sh [K
+[?2004l[?2004h[?1049h[22;0;0t[1;15r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[13;55H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 6.2                                           middle2.sh                                                     [1;119H(B[m[14d(B[0;7m^G(B[m Help[14;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[14;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[15d(B[0;7m^X(B[m Exit[15;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[?12l[?25h[?25l[1;69H(B[0;7m*[119G(B[m[?12l[?25h[2dh[?25l[?12l[?25he[?25l[?12l[?25ha[?25l[?12l[?25h(B[0;1m[34mhead[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h -[?25l[?12l[?25h(B[0;1m[35m -n[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h "[?25l[?12l[?25h[32m$[39m(B[m[?25l[?12l[?25h(B[0;1m[31m$2[39m(B[m[?25l[?12l[?25h(B[0;1m[33m"$2"[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h "[?25l[?12l[?25h[32m$[39m(B[m[?25l[?12l[?25h(B[0;1m[31m$1[39m(B[m[?25l[?12l[?25h(B[0;1m[33m"$1"[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h [32m|[39m(B[m[?25l[13d[K[?12l[?25h[2;20H[42m [49m(B[m[?25l[?12l[?25h t[?25l[?12l[?25ha[?25l[?12l[?25hi[?25l[?12l[?25h(B[0;1m[34mtail[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h -[?25l[?12l[?25h(B[0;1m[35m -n[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h "[?25l[?12l[?25h[32m$[39m(B[m[?25l[?12l[?25h(B[0;1m[31m$3[39m(B[m[?25l[?12l[?25h[32m$[39m(B[m[?25l[?12l[?25h [?25l[?12l[?25h(B[0;1m[33m"$3"[39m(B[m[?25l[14;16H[15X[14;31H(B[0;7mM-D(B[m DOS Format       [14;61H(B[0;7mM-A(B[m Append[16X[14;93H(B[0;7mB(B[m Backup File[K[15;2H(B[0;7mC(B[m Cancel[16G[15X[15;31H(B[0;7mM-M(B[m Mac Format         [61G(B[0;7mM-P(B[m Prepend[19X[15;91H(B[0;7m^T(B[m Browse[K[13d(B[0;7mFile Name to Write: middle2.sh                                                                                          [13;31H(B[m[?12l[?25h[?25l[13;53H[1K (B[0;7m[ Writing... ](B[m[K[1;69H(B[0;7m [119G(B[m[13;53H(B[0;7m[ Wrote 1 line ](B[m[14;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[14;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location[93G(B[0;7mU(B[m Undo       (B[0;7mM-A(B[m Set Mark[15;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo [106G(B[0;7mM-6(B[m Copy[?12l[?25h[2;33H[?25l[13d[J[15d[?12l[?25h[15;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ n[Kbash middle3[K2.sh pentane.pdb 15 5 
+[?2004lpentane
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data/alkanes[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data/alkanes[00m$ CD -[K[K[K[Kcd ..
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ nano haiku.txt
+[?2004l[?2004h[?1049h[22;0;0t[1;15r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[13;55H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 6.2                                            haiku.txt                                                     [1;119H(B[m[14d(B[0;7m^G(B[m Help[14;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[14;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[15d(B[0;7m^X(B[m Exit[15;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[?12l[?25h[?25l[13;50H(B[0;1m[37m[41m[ Cutbuffer is empty ][39;49m(B[m[?12l[?25h[2d[?25l[?12l[?25h[?25l[?12l[?25h[?25l[13;72H[?12l[?25h[2d[?25l[1;69H(B[0;7m*[119G(B[m[?12l[?25h[2dT[?25l[?12l[?25hh[?25l[?12l[?25he[?25l[?12l[?25h [?25l[?12l[?25hT[?25l[?12l[?25ha[?25l[?12l[?25ho[?25l[?12l[?25h [?25l[?12l[?25hi[?25l[?12l[?25hs[?25l[?12l[?25h [?25l[?12l[?25hs[?25l[?12l[?25he[?25l[?12l[?25he[?25l[?12l[?25hn[?25l[3d[?12l[?25h[?25l[?12l[?25hI[?25l[?12l[?25hs[?25l[?12l[?25h [?25l[13d[K[?12l[?25h[3;4Hn[?25l[?12l[?25ho[?25l[?12l[?25ht[?25l[?12l[?25h [?25l[?12l[?25ht[?25l[?12l[?25hh[?25l[?12l[?25he[?25l[?12l[?25h [?25l[?12l[?25ht[?25l[?12l[?25hr[?25l[?12l[?25hu[?25l[?12l[?25he[?25l[?12l[?25h [?25l[?12l[?25hT[?25l[?12l[?25ha[?25l[?12l[?25ho[?25l[?12l[?25h,[?25l[?12l[?25h [?25l[?12l[?25hu[?25l[?12l[?25hn[?25l[?12l[?25ht[?25l[?12l[?25hi[?25l[?12l[?25hl[?25l[4d[?12l[?25h[?25l[?12l[?25hY[?25l[?12l[?25ho[?25l[?12l[?25hu[?25l[?12l[?25h [?25l[?12l[?25hb[?25l[?12l[?25hr[?25l[?12l[?25hi[?25l[?12l[?25hn[?25l[?12l[?25hg[?25l[?12l[?25h [?25l[?12l[?25hf[?25l[?12l[?25hr[?25l[?12l[?25he[?25l[?12l[?25hs[?25l[?12l[?25hh[?25l[?12l[?25h [?25l[?12l[?25ht[?25l[?12l[?25ho[?25l[?12l[?25hn[?25l[?12l[?25he[?25l[?12l[?25hr[?25l[?12l[?25h.[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[?12l[?25hW[?25l[?12l[?25hi[?25l[?12l[?25ht[?25l[?12l[?25hh[?25l[?12l[?25h [?25l[?12l[?25hs[?25l[?12l[?25he[?25l[?12l[?25ha[?25l[?12l[?25hr[?25l[?12l[?25hc[?25l[?12l[?25hh[?25l[?12l[?25hi[?25l[?12l[?25hn[?25l[?12l[?25hg[?25l[?12l[?25h [?25l[?12l[?25hc[?25l[?12l[?25ho[?25l[?12l[?25hm[?25l[?12l[?25he[?25l[?12l[?25hs[?25l[?12l[?25h [?25l[?12l[?25hl[?25l[?12l[?25ho[?25l[?12l[?25hs[?25l[?12l[?25hs[?25l[7d[?12l[?25h[?25l[?12l[?25ha[?25l[?12l[?25hn[?25l[?12l[?25hd[?25l[?12l[?25h [?25l[?12l[?25ht[?25l[?12l[?25hh[?25l[?12l[?25he[?25l[?12l[?25h [?25l[?12l[?25hp[?25l[?12l[?25hr[?25l[?12l[?25he[?25l[?12l[?25hs[?25l[?12l[?25he[?25l[?12l[?25hn[?25l[?12l[?25hc[?25l[?12l[?25he[?25l[?12l[?25h [?25l[?12l[?25ho[?25l[?12l[?25hf[?25l[?12l[?25h [?25l[?12l[?25ha[?25l[?12l[?25hb[?25l[?12l[?25hs[?25l[?12l[?25he[?25l[?12l[?25hn[?25l[?12l[?25hc[?25l[?12l[?25he[?25l[?12l[?25h:[?25l[8d[?12l[?25h[?25l[?12l[?25h"[?25l[?12l[?25hM[?25l[?12l[?25hy[?25l[?12l[?25h [?25l[?12l[?25ht[?25l[?12l[?25hh[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25hT[?25l[?12l[?25hh[?25l[?12l[?25he[?25l[?12l[?25hs[?25l[?12l[?25hi[?25l[?12l[?25hs[?25l[?12l[?25h"[?25l[?12l[?25h [?25l[?12l[?25hn[?25l[?12l[?25ho[?25l[?12l[?25ht[?25l[?12l[?25h [?25l[?12l[?25hf[?25l[?12l[?25ho[?25l[?12l[?25hu[?25l[?12l[?25hn[?25l[?12l[?25hd[?25l[?12l[?25h [?25l[?12l[?25h[?25l[?12l[?25h.[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[?12l[?25hY[?25l[?12l[?25he[?25l[?12l[?25hs[?25l[?12l[?25ht[?25l[?12l[?25he[?25l[?12l[?25hr[?25l[?12l[?25hd[?25l[?12l[?25ha[?25l[?12l[?25hy[?25l[?12l[?25h [?25l[?12l[?25hi[?25l[?12l[?25ht[?25l[?12l[?25h [?25l[?12l[?25hw[?25l[?12l[?25ho[?25l[?12l[?25hr[?25l[?12l[?25hk[?25l[?12l[?25he[?25l[?12l[?25hd[?25l[?12l[?25h [?25l[11d[?12l[?25h[?25l[?12l[?25hT[?25l[?12l[?25ho[?25l[?12l[?25hd[?25l[?12l[?25ha[?25l[?12l[?25hy[?25l[?12l[?25h [?25l[?12l[?25hi[?25l[?12l[?25ht[?25l[?12l[?25h [?25l[?12l[?25hi[?25l[?12l[?25hs[?25l[?12l[?25h [?25l[?12l[?25hn[?25l[?12l[?25ho[?25l[?12l[?25ht[?25l[?12l[?25h [?25l[?12l[?25hw[?25l[?12l[?25ho[?25l[?12l[?25hr[?25l[?12l[?25hk[?25l[?12l[?25hi[?25l[?12l[?25hn[?25l[?12l[?25hg[?25l[12d[?12l[?25h[?25l[?12l[?25hS[?25l[?12l[?25ho[?25l[?12l[?25hf[?25l[?12l[?25ht[?25l[?12l[?25hw[?25l[?12l[?25ha[?25l[?12l[?25hr[?25l[?12l[?25he[?25l[?12l[?25h [?25l[?12l[?25hi[?25l[?12l[?25hs[?25l[?12l[?25h [?25l[?12l[?25hl[?25l[?12l[?25hi[?25l[?12l[?25hk[?25l[?12l[?25he[?25l[?12l[?25h [?25l[?12l[?25ht[?25l[?12l[?25hh[?25l[?12l[?25hq[?25l[?12l[?25ht[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25ha[?25l[?12l[?25ht[?25l[?12l[?25h.[?25l[14;16H[15X[14;31H(B[0;7mM-D(B[m DOS Format       [14;61H(B[0;7mM-A(B[m Append[16X[14;93H(B[0;7mB(B[m Backup File[K[15;2H(B[0;7mC(B[m Cancel[16G[15X[15;31H(B[0;7mM-M(B[m Mac Format         [61G(B[0;7mM-P(B[m Prepend[19X[15;91H(B[0;7m^T(B[m Browse[K[13d(B[0;7mFile Name to Write: haiku.txt                                                                                           [13;30H(B[m[?12l[?25h[?25l[13;53H[1K (B[0;7m[ Writing... ](B[m[K[1;69H(B[0;7m [119G(B[m[13;52H(B[0;7m[ Wrote 11 lines ](B[m[14;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[14;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location[93G(B[0;7mU(B[m Undo       (B[0;7mM-A(B[m Set Mark[15;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo [106G(B[0;7mM-6(B[m Copy[?12l[?25h[12;23H[?25l[13d[J[15d[?12l[?25h[15;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ cat haiku,[K.txt
+[?2004lThe Tao is seen
+Is not the true Tao, until
+You bring fresh toner.
+
+With searching comes loss
+and the presence of absence:
+"My Thesis" not found.
+
+Yesterday it worked 
+Today it is not working
+Software is like that.
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ f[Kgrp not haiku.txt
+[?2004lCommand 'grp' not found, but there are 17 similar ones.
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ grep nbot haiku[K[K[K[K[K[K[K[K[Kot haiku.txt
+[?2004lIs [01;31m[Knot[m[K the true Tao, until
+"My Thesis" [01;31m[Knot[m[K found.
+Today it is [01;31m[Knot[m[K working
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ grp [K[Kep ha[K[KThe haiku.txt
+[?2004l[01;31m[KThe[m[K Tao is seen
+"My [01;31m[KThe[m[Ksis" not found.
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ grep -w The haiku.txt
+[?2004l[01;31m[KThe[m[K Tao is seen
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ grep -w "is not" haiku.txt
+[?2004lToday it [01;31m[Kis not[m[K working
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ grep -n "it" haiku.txt
+[?2004l[32m[K5[m[K[36m[K:[m[KW[01;31m[Kit[m[Kh searching comes loss
+[32m[K9[m[K[36m[K:[m[KYesterday [01;31m[Kit[m[K worked 
+[32m[K10[m[K[36m[K:[m[KToday [01;31m[Kit[m[K is not working
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ grep -n -w "the" haiku.txt
+[?2004l[32m[K2[m[K[36m[K:[m[KIs not [01;31m[Kthe[m[K true Tao, until
+[32m[K6[m[K[36m[K:[m[Kand [01;31m[Kthe[m[K presence of absence:
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ grep -n -w -i "the" haiku.txt
+[?2004l[32m[K1[m[K[36m[K:[m[K[01;31m[KThe[m[K Tao is seen
+[32m[K2[m[K[36m[K:[m[KIs not [01;31m[Kthe[m[K true Tao, until
+[32m[K6[m[K[36m[K:[m[Kand [01;31m[Kthe[m[K presence of absence:
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ grep -n -w -v "the" haiku.txt
+[?2004l[32m[K1[m[K[36m[K:[m[KThe Tao is seen
+[32m[K3[m[K[36m[K:[m[KYou bring fresh toner.
+[32m[K4[m[K[36m[K:[m[K
+[32m[K5[m[K[36m[K:[m[KWith searching comes loss
+[32m[K7[m[K[36m[K:[m[K"My Thesis" not found.
+[32m[K8[m[K[36m[K:[m[K
+[32m[K9[m[K[36m[K:[m[KYesterday it worked 
+[32m[K10[m[K[36m[K:[m[KToday it is not working
+[32m[K11[m[K[36m[K:[m[KSoftware is like that.
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ '[Kgrep -r Yesterday
+[?2004l[35m[Khaiku.txt[m[K[36m[K:[m[K[01;31m[KYesterday[m[K it worked 
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ grep --help
+[?2004lUsage: grep [OPTION]... PATTERNS [FILE]...
+Search for PATTERNS in each FILE.
+Example: grep -i 'hello world' menu.h main.c
+PATTERNS can contain multiple patterns separated by newlines.
+
+Pattern selection and interpretation:
+  -E, --extended-regexp     PATTERNS are extended regular expressions
+  -F, --fixed-strings       PATTERNS are strings
+  -G, --basic-regexp        PATTERNS are basic regular expressions
+  -P, --perl-regexp         PATTERNS are Perl regular expressions
+  -e, --regexp=PATTERNS     use PATTERNS for matching
+  -f, --file=FILE           take PATTERNS from FILE
+  -i, --ignore-case         ignore case distinctions in patterns and data
+      --no-ignore-case      do not ignore case distinctions (default)
+  -w, --word-regexp         match only whole words
+  -x, --line-regexp         match only whole lines
+  -z, --null-data           a data line ends in 0 byte, not newline
+
+Miscellaneous:
+  -s, --no-messages         suppress error messages
+  -v, --invert-match        select non-matching lines
+  -V, --version             display version information and exit
+      --help                display this help text and exit
+
+Output control:
+  -m, --max-count=NUM       stop after NUM selected lines
+  -b, --byte-offset         print the byte offset with output lines
+  -n, --line-number         print line number with output lines
+      --line-buffered       flush output on every line
+  -H, --with-filename       print file name with output lines
+  -h, --no-filename         suppress the file name prefix on output
+      --label=LABEL         use LABEL as the standard input file name prefix
+  -o, --only-matching       show only nonempty parts of lines that match
+  -q, --quiet, --silent     suppress all normal output
+      --binary-files=TYPE   assume that binary files are TYPE;
+                            TYPE is 'binary', 'text', or 'without-match'
+  -a, --text                equivalent to --binary-files=text
+  -I                        equivalent to --binary-files=without-match
+  -d, --directories=ACTION  how to handle directories;
+                            ACTION is 'read', 'recurse', or 'skip'
+  -D, --devices=ACTION      how to handle devices, FIFOs and sockets;
+                            ACTION is 'read' or 'skip'
+  -r, --recursive           like --directories=recurse
+  -R, --dereference-recursive  likewise, but follow all symlinks
+      --include=GLOB        search only files that match GLOB (a file pattern)
+      --exclude=GLOB        skip files that match GLOB
+      --exclude-from=FILE   skip files that match any file pattern from FILE
+      --exclude-dir=GLOB    skip directories that match GLOB
+  -L, --files-without-match  print only names of FILEs with no selected lines
+  -l, --files-with-matches  print only names of FILEs with selected lines
+  -c, --count               print only a count of selected lines per FILE
+  -T, --initial-tab         make tabs line up (if needed)
+  -Z, --null                print 0 byte after FILE name
+
+Context control:
+  -B, --before-context=NUM  print NUM lines of leading context
+  -A, --after-context=NUM   print NUM lines of trailing context
+  -C, --context=NUM         print NUM lines of output context
+  -NUM                      same as --context=NUM
+      --group-separator=SEP  print SEP on line between matches with context
+      --no-group-separator  do not print separator for matches with context
+      --color[=WHEN],
+      --colour[=WHEN]       use markers to highlight the matching strings;
+                            WHEN is 'always', 'never', or 'auto'
+  -U, --binary              do not strip CR characters at EOL (MSDOS/Windows)
+
+When FILE is '-', read standard input.  With no FILE, read '.' if
+recursive, '-' otherwise.  With fewer than two FILEs, assume -h.
+Exit status is 0 if any line is selected, 1 otherwise;
+if any error occurs and -q is not given, the exit status is 2.
+
+Report bugs to: bug-grep@gnu.org
+GNU grep home page: <https://www.gnu.org/software/grep/>
+General help using GNU software: <https://www.gnu.org/gethelp/>
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ grep --help[K[K[K[K[K[K[K[K[K[K[Kgrep 'of' haiku.txt
+[?2004land the presence [01;31m[Kof[m[K absence:
+S[01;31m[Kof[m[Ktware is like that.
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ grep -E "of" haiku.txt
+[?2004land the presence [01;31m[Kof[m[K absence:
+S[01;31m[Kof[m[Ktware is like that.
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ grep -w "of" haiku.txt
+[?2004land the presence [01;31m[Kof[m[K absence:
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ grep -i "of" haiku.txt
+[?2004land the presence [01;31m[Kof[m[K absence:
+S[01;31m[Kof[m[Ktware is like that.
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ grep _[K-E '^.o" haiku.txtr[K
+[?2004l[?2004h> ^C[?2004l[?2004h[?2004l
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ grep -E "^.o" haiku.txt
+[?2004l[01;31m[KYo[m[Ku bring fresh toner.
+[01;31m[KTo[m[Kday it is not working
+[01;31m[KSo[m[Kftware is like that.
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ ls
+[?2004l[0m[01;34malkanes[0m  animals.csv  final.txt  haiku.txt
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ p[Kcd anm[Kim[K[K[K[K[K[K[Kgrep -w $1 -r $2 | cut -d : -f 2 | cut -d , -f 1,3 > ani mals.csv
+[?2004lUsage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ nano count-species.sh 
+[?2004l[?2004h[?1049h[22;0;0t[1;15r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[13;55H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 6.2                                        count-species.sh                                                  [1;119H(B[m[14d(B[0;7m^G(B[m Help[14;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[14;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[15d(B[0;7m^X(B[m Exit[15;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[?12l[?25h[?25l[1;72H(B[0;7m*[119G(B[m[?12l[?25h[2dg[?25l[?12l[?25hr[?25l[?12l[?25he[?25l[?12l[?25h(B[0;1m[34mgrep[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h -[?25l[?12l[?25h(B[0;1m[35m -w[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h [32m$[39m(B[m[?25l[?12l[?25h(B[0;1m[31m$1[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h -[?25l[?12l[?25h(B[0;1m[35m -r[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h [32m$[39m(B[m[?25l[?12l[?25h(B[0;1m[31m$2[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h [32m|[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[13d[K[?12l[?25h[2;19H c[?25l[?12l[?25hu[?25l[?12l[?25h(B[0;1m[34mcut[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h -[?25l[?12l[?25h(B[0;1m[35m -d[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h [32m:[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h -[?25l[?12l[?25h(B[0;1m[35m -f[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h 2[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h [32m|[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h c[?25l[?12l[?25hu[?25l[?12l[?25h(B[0;1m[34mcut[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h -[?25l[?12l[?25h(B[0;1m[35m -d[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h ,[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h -[?25l[?12l[?25h(B[0;1m[35m -f[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h 1[?25l[?12l[?25h,[?25l[?12l[?25h3[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h [32m>[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h [32m$[39m(B[m[?25l[?12l[?25h(B[0;1m[31m$1[39m(B[m[?25l[?12l[?25h.[?25l[?12l[?25ht[?25l[?12l[?25hx[?25l[?12l[?25ht[?25l[14;16H[15X[14;31H(B[0;7mM-D(B[m DOS Format       [14;61H(B[0;7mM-A(B[m Append[16X[14;93H(B[0;7mB(B[m Backup File[K[15;2H(B[0;7mC(B[m Cancel[16G[15X[15;31H(B[0;7mM-M(B[m Mac Format         [61G(B[0;7mM-P(B[m Prepend[19X[15;91H(B[0;7m^T(B[m Browse[K[13d(B[0;7mFile Name to Write: count-species.sh                                                                                    [13;37H(B[m[?12l[?25h[?25l[13;53H[1K (B[0;7m[ Writing... ](B[m[K[1;72H(B[0;7m [119G(B[m[13;53H(B[0;7m[ Wrote 1 line ](B[m[14;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[14;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location[93G(B[0;7mU(B[m Undo       (B[0;7mM-A(B[m Set Mark[15;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo [106G(B[0;7mM-6(B[m Copy[?12l[?25h[2;60H[?25l[13d[J[15d[?12l[?25h[15;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ bash cp[Kount-species.sh  bear .
+[?2004l[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ d[Kfind .
+[?2004l.
+./haiku.txt
+./final.txt
+./bear.txt
+./animals.csv
+./count-species.sh
+./alkanes
+./alkanes/sorted-lengths.txt
+./alkanes/methane-40
+./alkanes/cubane-37
+./alkanes/ethane-37
+./alkanes/cubane-30
+./alkanes/lengths.txt
+./alkanes/methane-25
+./alkanes/methane.pdb
+./alkanes/ethane-25
+./alkanes/testfile02.txt
+./alkanes/methane-30
+./alkanes/ethane-30
+./alkanes/middle2.sh
+./alkanes/longest.sh
+./alkanes/octane.pdb
+./alkanes/middle.sh
+./alkanes/cubane-40
+./alkanes/testfile01.txt
+./alkanes/ethane-40
+./alkanes/cubane-25
+./alkanes/middle1.sh
+./alkanes/ethane.pdb
+./alkanes/cubane.pdb
+./alkanes/methane-37
+./alkanes/pentane.pdb
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ find . -type d
+[?2004l.
+./alkanes
+./alkanes/methane-40
+./alkanes/cubane-37
+./alkanes/ethane-37
+./alkanes/cubane-30
+./alkanes/methane-25
+./alkanes/ethane-25
+./alkanes/methane-30
+./alkanes/ethane-30
+./alkanes/cubane-40
+./alkanes/ethane-40
+./alkanes/cubane-25
+./alkanes/methane-37
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ find . -type f
+[?2004l./haiku.txt
+./final.txt
+./bear.txt
+./animals.csv
+./count-species.sh
+./alkanes/sorted-lengths.txt
+./alkanes/lengths.txt
+./alkanes/methane.pdb
+./alkanes/testfile02.txt
+./alkanes/middle2.sh
+./alkanes/longest.sh
+./alkanes/octane.pdb
+./alkanes/middle.sh
+./alkanes/testfile01.txt
+./alkanes/middle1.sh
+./alkanes/ethane.pdb
+./alkanes/cubane.pdb
+./alkanes/pentane.pdb
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ find . - [Kname.txt
+[?2004lfind: unknown predicate `-name.txt'
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ find . - name *.txt
+[?2004l.
+./haiku.txt
+./final.txt
+./bear.txt
+./animals.csv
+./count-species.sh
+./alkanes
+./alkanes/sorted-lengths.txt
+./alkanes/methane-40
+./alkanes/cubane-37
+./alkanes/ethane-37
+./alkanes/cubane-30
+./alkanes/lengths.txt
+./alkanes/methane-25
+./alkanes/methane.pdb
+./alkanes/ethane-25
+./alkanes/testfile02.txt
+./alkanes/methane-30
+./alkanes/ethane-30
+./alkanes/middle2.sh
+./alkanes/longest.sh
+./alkanes/octane.pdb
+./alkanes/middle.sh
+./alkanes/cubane-40
+./alkanes/testfile01.txt
+./alkanes/ethane-40
+./alkanes/cubane-25
+./alkanes/middle1.sh
+./alkanes/ethane.pdb
+./alkanes/cubane.pdb
+./alkanes/methane-37
+./alkanes/pentane.pdb
+find: ‘-’: No such file or directory
+find: ‘name’: No such file or directory
+bear.txt
+final.txt
+haiku.txt
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ find . - name *.txt[1P
+[?2004lfind: paths must precede expression: `final.txt'
+find: possible unquoted pattern after predicate `-name'?
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ s[Kls[K[Kfind . -name *.pdb
+[?2004l./alkanes/methane.pdb
+./alkanes/octane.pdb
+./alkanes/ethane.pdb
+./alkanes/cubane.pdb
+./alkanes/pentane.pdb
+[?2004h]0;venky1245@TIGER01686: ~/project/shell-lesson-data/exercise-data[01;32mvenky1245@TIGER01686[00m:[01;34m~/project/shell-lesson-data/exercise-data[00m$ exit
+[?2004lexit
+
+Script done on 2023-05-01 12:48:51+05:30 [COMMAND_EXIT_CODE="0"]
